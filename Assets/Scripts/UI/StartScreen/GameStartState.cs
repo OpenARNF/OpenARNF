@@ -82,6 +82,7 @@ public class GameStartState : ScreenState
         var activeSlot = SaveGameManager.activeSlot;
         var keyboard = _controller.controllers.Keyboard;
 #if DEBUG || UNITY_EDITOR
+/*
         if (keyboard != null && keyboard.GetKey(KeyCode.LeftControl) && keyboard.GetKeyDown(KeyCode.A) && activeSlot != null)
         {
             var allAchievements = Enum.GetValues(typeof(AchievementID)).Cast<AchievementID>().ToList();
@@ -99,6 +100,7 @@ public class GameStartState : ScreenState
                 activeSlot.itemsCollected.Add(item);
             }
         }
+*/
 #elif STEAM
         if (keyboard != null && keyboard.GetKey(KeyCode.LeftControl) && keyboard.GetKeyDown(KeyCode.A) && activeSlot != null)
         {

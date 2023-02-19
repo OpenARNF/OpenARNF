@@ -7,6 +7,7 @@ using Rewired;
 using System;
 using System.IO;
 using System.Linq;
+using UnityEngine.InputSystem;
 #if UNITY_SWITCH
 using Rewired.Platforms.Switch;
 #endif
@@ -94,7 +95,7 @@ public class InputHelper : MonoBehaviour
 #if DEBUG && !UNITY_SWITCH
     private void LateUpdate()
     {
-        if (Input.GetKeyDown(KeyCode.F12))
+        if (UnityEngine.InputSystem.Keyboard.current.f12Key.isPressed)
         {
             string path;
             if (Application.isEditor)

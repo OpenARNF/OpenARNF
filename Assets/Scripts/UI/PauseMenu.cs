@@ -21,6 +21,8 @@ public class PauseMenu : MonoBehaviour
 
     private float _conventionTimer;
 
+    private UnityEngine.InputSystem.Keyboard keyboard = UnityEngine.InputSystem.Keyboard.current;
+
     public void Awake()
     {
         instance = this;
@@ -43,13 +45,13 @@ public class PauseMenu : MonoBehaviour
     {
         if (_skipUpdate) return;
 
-        if(Input.GetKey(KeyCode.LeftShift) && Input.GetKeyDown(KeyCode.R))
+        if(keyboard.leftShiftKey.isPressed && keyboard.rKey.isPressed)
         {
             UISounds.instance.Confirm();
             StartCoroutine(RestartShortcut());
         }
 
-        if (CanPause() && (PausePressed() || Input.GetKeyDown(KeyCode.Escape)))
+        if (CanPause() && (PausePressed() || keyboard.escapeKey.isPressed))
         {
             Show();
             return;

@@ -407,6 +407,11 @@ public class SaveGameManager : MonoBehaviour
         try
         {
             _saving = true;
+            var serSettings = new JsonSerializerSettings
+            {
+                NullValueHandling = NullValueHandling.Ignore,
+                ReferenceLoopHandling = ReferenceLoopHandling.Ignore
+            };
 
             string json;
             var versionString = version.ToString();
@@ -420,7 +425,7 @@ public class SaveGameManager : MonoBehaviour
                 Debug.Log("Saving " + _saveGameFileKey);
                 lock (saveFileData)
                 {
-                    json = JsonConvert.SerializeObject(saveFileData, Formatting.None, new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
+                    json = JsonConvert.SerializeObject(saveFileData, Formatting.None, serSettings);
                 }
 
                 _fileService.Write(_saveGameFileKey, json);
@@ -432,7 +437,7 @@ public class SaveGameManager : MonoBehaviour
             {
                 lock (data)
                 {
-                    json = JsonConvert.SerializeObject(data, Formatting.None, new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
+                    json = JsonConvert.SerializeObject(data, Formatting.None, serSettings);
                 }
 
                 _fileService.Write(SlotFileName(data.slotNumber), json);
@@ -441,7 +446,7 @@ public class SaveGameManager : MonoBehaviour
                 {
                     lock(data.activeGameData.layout)
                     {
-                        json = JsonConvert.SerializeObject(data.activeGameData.layout, Formatting.None, new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
+                        json = JsonConvert.SerializeObject(data.activeGameData.layout, Formatting.None, serSettings);
                     }
                     _fileService.Write(SlotLayoutFileName(data.slotNumber), json);
                     _needSaveLayout = false;

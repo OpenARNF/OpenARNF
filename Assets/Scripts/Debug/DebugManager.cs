@@ -20,6 +20,7 @@ public class DebugManager : MonoBehaviour
     // Update is called once per frame
     void Update ()
     {
+        /*
         var keyboard = ReInput.controllers.Keyboard;
 
         if (keyboard != null && keyboard.GetKey(KeyCode.LeftShift))
@@ -489,6 +490,7 @@ public class DebugManager : MonoBehaviour
                 }
             }
         }
+        */
     }
 
     public string EscapeCharacters(string text)

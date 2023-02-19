@@ -3,6 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.Controls;
+using UnityEngine.InputSystem.LowLevel;
 
 /* This is a terrible hacky wrapper class I wrote to substitute for the AMAZING Rewired input pluggin.
  * It only supports single player Keyboard input without modification.
@@ -21,7 +24,7 @@ namespace Rewired
         public static Player SystemPlayer
         {
             get { return players.SystemPlayer; }
-        
+
         }
         public static MappingHelper mapping = new MappingHelper();
     }
@@ -44,7 +47,7 @@ namespace Rewired
             {"UIHorizontal", new InputAction(){id = 14} },
             {"UIVertical", new InputAction(){id = 15} },
             {"UISubmit", new InputAction(){id = 16} },
-            {"UICancel", new InputAction(){id = 17} },            
+            {"UICancel", new InputAction(){id = 17} },
             {"UIUp", new InputAction(){id = 18} },
             {"UIDown", new InputAction(){id = 19} },
             {"UILeft", new InputAction(){id = 20} },
@@ -102,7 +105,7 @@ namespace Rewired
 
         public Player GetPlayer(int id)
         {
-            if(id == 0)
+            if (id == 0)
             {
                 return SystemPlayer;
             }
@@ -116,6 +119,8 @@ namespace Rewired
     public class Player
     {
         public readonly ControllerHelper controllers = new ControllerHelper();
+        private static UnityEngine.InputSystem.Keyboard keyboard = UnityEngine.InputSystem.Keyboard.current;
+        private static UnityEngine.InputSystem.Gamepad gamepad = UnityEngine.InputSystem.Gamepad.current;
 
         public int id
         {
@@ -132,125 +137,125 @@ namespace Rewired
             throw (new System.NotImplementedException());
         }
 
-        private Dictionary<string, KeyCode> _keyValues = new Dictionary<string, KeyCode>()
+        private Dictionary<string, List<ButtonControl>> _keyValues = new Dictionary<string, List<ButtonControl>>()
         {
-            {"UISubmit", KeyCode.Return },
-            {"UICancel", KeyCode.Escape },
-            {"Pause", KeyCode.Escape },
-            {"ExpandMap", KeyCode.M },
-            {"Up", KeyCode.W },
-            {"Down", KeyCode.S },
-            {"Left", KeyCode.A },
-            {"Right", KeyCode.D },
-            {"Jump", KeyCode.Space },
-            {"Attack", KeyCode.J },
-            {"SpecialMove", KeyCode.L },
-            {"ActivatedItem", KeyCode.U },
-            {"AngleUp", KeyCode.I },
-            {"AngleDown", KeyCode.K },
-            {"PageRight", KeyCode.Comma },
-            {"PageLeft", KeyCode.Period },
+            {"UISubmit", new List<ButtonControl>{keyboard.enterKey, gamepad.aButton} },
+            {"UICancel", new List<ButtonControl>{keyboard.escapeKey, gamepad.bButton, gamepad.startButton} },
+            {"UIUp", new List<ButtonControl>{keyboard.upArrowKey, gamepad.dpad.up, gamepad.leftStick.up} },
+            {"UIDown", new List<ButtonControl>{keyboard.downArrowKey, gamepad.dpad.down, gamepad.leftStick.down} },
+            {"UILeft", new List<ButtonControl>{keyboard.leftArrowKey, gamepad.dpad.left, gamepad.leftStick.left} },
+            {"UIRight", new List<ButtonControl>{keyboard.rightArrowKey, gamepad.dpad.right, gamepad.leftStick.right} },
+            {"Pause", new List<ButtonControl>{keyboard.escapeKey, gamepad.startButton} },
+            {"ExpandMap", new List<ButtonControl>{keyboard.mKey, gamepad.selectButton} },
+            /*
+            {"Up", new List<ButtonControl>{keyboard.wKey, gamepad.dpad.up} },
+            {"Down", new List<ButtonControl>{keyboard.sKey, gamepad.dpad.down} },
+            {"Left", new List<ButtonControl>{keyboard.aKey, gamepad.dpad.left} },
+            {"Right", new List<ButtonControl>{keyboard.dKey, gamepad.dpad.right} },
+            */
+            {"Jump", new List<ButtonControl>{keyboard.spaceKey, gamepad.aButton} },
+            {"Attack", new List<ButtonControl>{keyboard.jKey, gamepad.xButton} },
+            {"AngleUp", new List<ButtonControl>{keyboard.iKey, gamepad.rightTrigger} },
+            {"AngleDown", new List<ButtonControl>{keyboard.kKey, gamepad.leftTrigger} },
+            {"SpecialMove", new List<ButtonControl>{keyboard.lKey, gamepad.bButton} },
+            {"ActivatedItem", new List<ButtonControl>{keyboard.uKey, gamepad.yButton} },
+            {"PageRight", new List<ButtonControl>{keyboard.commaKey, gamepad.rightShoulder} },
+            {"PageLeft", new List<ButtonControl>{keyboard.periodKey, gamepad.leftShoulder} },
+            {"LockPosition", new List<ButtonControl>{keyboard.leftCtrlKey, gamepad.leftStickButton} },
+            {"WeaponWheel", new List<ButtonControl>{keyboard.pKey, gamepad.rightStickButton} },
+            /*
             {"CoinSlot", KeyCode.Insert },
-            {"WeaponWheel", KeyCode.P },
-            {"LockPosition", KeyCode.LeftControl },
             {"WeaponCancel", KeyCode.Delete },
+            */
         };
 
         public bool GetButtonDown(string label)
         {
-            switch(label)
+            if (_keyValues.TryGetValue(label, out var keyList))
             {
-                case "UIUp":
-                    return Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow);
-                case "UIDown":
-                    return Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow);
-                case "UILeft":
-                    return Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow);
-                case "UIRight":
-                    return Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow);
-                default:
-                    if(_keyValues.TryGetValue(label, out var keyCode))
+                foreach (var key in keyList)
+                {
+                    if (key.wasPressedThisFrame)
                     {
-                        return Input.GetKeyDown(keyCode);
+                        return true;
                     }
-                    else
-                    {
-                        Debug.LogError(label + " is not defined");
-                        return false;
-                    }
+                }
+                return false;
+            }
+            else
+            {
+                Debug.LogError(label + " is not defined");
+                return false;
             }
         }
+
 
         public bool GetButtonUp(string label)
         {
-            switch (label)
+            if (_keyValues.TryGetValue(label, out var keyList))
             {
-                case "UIUp":
-                    return Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.UpArrow);
-                case "UIDown":
-                    return Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.DownArrow);
-                case "UILeft":
-                    return Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.LeftArrow);
-                case "UIRight":
-                    return Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.RightArrow);
-                default:
-                    if (_keyValues.TryGetValue(label, out var keyCode))
+                foreach (var key in keyList)
+                {
+                    if (key.wasReleasedThisFrame)
                     {
-                        return Input.GetKeyUp(keyCode);
+                        return true;
                     }
-                    else
-                    {
-                        Debug.LogError(label + " is not defined");
-                        return false;
-                    }                    
+                }
+                return false;
+            }
+            else
+            {
+                Debug.LogError(label + " is not defined");
+                return false;
             }
         }
+
 
         public bool GetButton(string label)
         {
-            switch (label)
+            if (_keyValues.TryGetValue(label, out var keyList))
             {
-                case "UIUp":
-                    return Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow);
-                case "UIDown":
-                    return Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow);
-                case "UILeft":
-                    return Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow);
-                case "UIRight":
-                    return Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow);
-                default:
-                    if (_keyValues.TryGetValue(label, out var keyCode))
+                foreach (var key in keyList)
+                {
+                    if (key.isPressed)
                     {
-                        return Input.GetKey(keyCode);
+                        return true;
                     }
-                    else
-                    {
-                        Debug.LogError(label + " is not defined");
-                        return false;
-                    }
+                }
+                return false;
+            }
+            else
+            {
+                Debug.LogError(label + " is not defined");
+                return false;
             }
         }
 
+
         public bool GetAnyButtonDown()
         {
-            foreach (KeyCode keyCode in Enum.GetValues(typeof(KeyCode)))
+            foreach (var bcList in _keyValues.Values)
             {
-                if(Input.GetKeyDown(keyCode))
+                foreach (var bc in bcList)
                 {
-                    return true;
+                    if (bc.isPressed)
+                    {
+                        return true;
+                    }
                 }
             }
-            return false;            
+            return false;
         }
+
         public float GetAxis(string label)
         {
-            if(label == "Vertical")
+            if (label == "Vertical")
             {
-                if (Input.GetKey(KeyCode.W))
+                if (keyboard.wKey.isPressed || gamepad.dpad.up.isPressed || gamepad.leftStick.up.isPressed)
                 {
                     return 1;
                 }
-                else if (Input.GetKey(KeyCode.S))
+                else if (keyboard.sKey.isPressed || gamepad.dpad.down.isPressed || gamepad.leftStick.down.isPressed)
                 {
                     return -1;
                 }
@@ -259,13 +264,13 @@ namespace Rewired
                     return 0;
                 }
             }
-            else if(label == "Horizontal")
+            else if (label == "Horizontal")
             {
-                if (Input.GetKey(KeyCode.D))
+                if (keyboard.dKey.isPressed || gamepad.dpad.right.isPressed || gamepad.leftStick.right.isPressed)
                 {
                     return 1;
                 }
-                else if (Input.GetKey(KeyCode.A))
+                else if (keyboard.aKey.isPressed || gamepad.dpad.left.isPressed || gamepad.leftStick.left.isPressed)
                 {
                     return -1;
                 }
@@ -274,6 +279,7 @@ namespace Rewired
                     return 0;
                 }
             }
+            /*
             else if (label == "WeaponsVertical")
             {
                 if (Input.GetKey(KeyCode.UpArrow))
@@ -304,6 +310,7 @@ namespace Rewired
                     return 0;
                 }
             }
+            */
 
             Debug.LogError("Axis " + label + " is not defined");
             return 0;
@@ -354,7 +361,7 @@ namespace Rewired
             _Controllers.Add(controller);
 
             var joystick = controller as Joystick;
-            if (joystick != null) 
+            if (joystick != null)
             {
                 _Joysticks.Add(joystick);
             }
@@ -391,11 +398,12 @@ namespace Rewired
             get { return ControllerType.Keyboard; }
         }
 
-        public override string name 
-        { 
+        public override string name
+        {
             get { return "Keyboard"; }
         }
 
+        /*
         public bool GetKey(KeyCode keyCode)
         {
             return Input.GetKey(keyCode);
@@ -405,6 +413,7 @@ namespace Rewired
         {
             return Input.GetKeyDown(keyCode);            
         }
+        */
 
         public IEnumerable<PollingInfo> PollForAllKeysDown()
         {
@@ -420,7 +429,7 @@ namespace Rewired
         }
     }
 
-    public class Joystick : Controller 
+    public class Joystick : Controller
     {
         public override ControllerType type
         {
@@ -475,13 +484,13 @@ namespace Rewired
 
         public ActionElementMap GetFirstElementMapWithAction(Controller controller, int id, bool skipDisabledMaps)
         {
-            if(controller != ReInput.SystemPlayer.controllers.Keyboard)
+            if (controller != ReInput.SystemPlayer.controllers.Keyboard)
             {
                 Debug.LogError("Only the keyboard for the system player is supported by default in OpenARNF. ");
                 return null;
             }
 
-            if(_aems.TryGetValue(id, out var aem))
+            if (_aems.TryGetValue(id, out var aem))
             {
                 return aem;
             }
@@ -489,7 +498,7 @@ namespace Rewired
             {
                 Debug.LogError("No action element map could be found for id " + id);
                 return null;
-            }            
+            }
         }
     }
 
@@ -519,7 +528,7 @@ namespace Rewired
     }
 
     public class ActionElementMap
-    {        
+    {
         public string elementIdentifierName
         {
             get; set;
@@ -578,7 +587,7 @@ namespace Rewired
 }
 
 namespace Rewired.Data.Mapping
-{ 
+{
     public class HardwareJoystickMap
     {
         public Guid Guid;

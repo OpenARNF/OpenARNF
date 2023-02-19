@@ -80,7 +80,7 @@ public class TitleScreenState : ScreenState
         {
             GoToState(fileScreenState);
         }
-        else if ((_controller.controllers.hasKeyboard && Input.anyKeyDown) || _controller.GetAnyButtonDown())
+        else if ((_controller.controllers.hasKeyboard && _controller.GetAnyButtonDown()) || _controller.GetAnyButtonDown())
         {
             UISounds.instance.Confirm();
             if (conventionMode)
