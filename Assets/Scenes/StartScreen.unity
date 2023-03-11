@@ -3695,7 +3695,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8231eded8f6b0254387a764fd5a7d646, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: {fileID: 610762673}
 --- !u!114 &610762673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3905,28 +3904,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10efa70eea88e69459c632aac286892d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rewiredInputManager: {fileID: 0}
-  useAllRewiredGamePlayers: 0
-  useRewiredSystemPlayer: 1
-  rewiredPlayerIds: 00000000
-  usePlayingPlayersOnly: 0
-  playerMice: []
-  moveOneElementPerAxisPress: 0
-  setActionsById: 0
-  horizontalActionId: -1
-  verticalActionId: -1
-  submitActionId: -1
-  cancelActionId: -1
-  m_HorizontalAxis: UIHorizontal
-  m_VerticalAxis: UIVertical
-  m_SubmitButton: UISubmit
-  m_CancelButton: UICancel
-  m_InputActionsPerSecond: 6
-  m_RepeatDelay: 0
-  m_allowMouseInput: 1
-  m_allowMouseInputIfTouchSupported: 1
-  m_allowTouchInput: 1
-  m_ForceModuleActive: 0
 --- !u!114 &655015017
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12061,7 +12038,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1701904237
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12119,7 +12096,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Highlighted
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1701904239}
   m_OnClick:
     m_PersistentCalls:

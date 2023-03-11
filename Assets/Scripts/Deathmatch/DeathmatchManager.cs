@@ -151,10 +151,7 @@ public class DeathmatchManager : MonoBehaviour
             instance = this;
         }
 
-        for (int i = 0; i < 4; i++)
-        {
-            _controllers.Add(ReInput.players.GetPlayer(i));
-        }
+        _controllers.AddRange(ReInput.players.GetActivePlayers());
 
         totalScore = new Dictionary<Team, int>()
         {
@@ -297,6 +294,7 @@ public class DeathmatchManager : MonoBehaviour
         if (!_ready) return;
 
 #if DEBUG
+/*
         if((Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift)) && Input.GetKeyDown(KeyCode.K))
         {
             foreach (var p in players)
@@ -304,6 +302,7 @@ public class DeathmatchManager : MonoBehaviour
                 p.Hurt(2000);
             }
         }
+*/
 #endif
 
         if (!PauseMenu.instance || !PauseMenu.instance.visible)

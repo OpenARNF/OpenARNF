@@ -78,7 +78,7 @@ namespace Rewired
     {
     }
 
-    public class PlayerHelper : IEnumerable<Player>
+    public class PlayerHelper
     {
         public Player SystemPlayer = new Player();
 
@@ -93,16 +93,6 @@ namespace Rewired
             get { return 1; }
         }
 
-        public IEnumerator<Player> GetEnumerator()
-        {
-            yield return SystemPlayer;
-        }
-
-        IEnumerator IEnumerable.GetEnumerator()
-        {
-            throw new NotImplementedException();
-        }
-
         public Player GetPlayer(int id)
         {
             if (id == 0)
@@ -113,6 +103,11 @@ namespace Rewired
             {
                 return null;
             }
+        }
+
+        public List<Player> GetActivePlayers()
+        {
+            return new List<Player>{SystemPlayer};
         }
     }
 
@@ -132,10 +127,6 @@ namespace Rewired
             get { return "OPEN ARNF DEBUG"; }
         }
 
-        public bool GetAnyButton()
-        {
-            throw (new System.NotImplementedException());
-        }
 
         private Dictionary<string, List<ButtonControl>> _keyValues = new Dictionary<string, List<ButtonControl>>()
         {
@@ -231,6 +222,20 @@ namespace Rewired
             }
         }
 
+        public bool GetAnyButton()
+        {
+            foreach (var bcList in _keyValues.Values)
+            {
+                foreach (var bc in bcList)
+                {
+                    if (bc.isPressed)
+                    {
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
 
         public bool GetAnyButtonDown()
         {
@@ -238,7 +243,7 @@ namespace Rewired
             {
                 foreach (var bc in bcList)
                 {
-                    if (bc.isPressed)
+                    if (bc.wasPressedThisFrame)
                     {
                         return true;
                     }
@@ -279,14 +284,13 @@ namespace Rewired
                     return 0;
                 }
             }
-            /*
             else if (label == "WeaponsVertical")
             {
-                if (Input.GetKey(KeyCode.UpArrow))
+                if (keyboard.upArrowKey.isPressed || gamepad.rightStick.up.isPressed)
                 {
                     return 1;
                 }
-                else if (Input.GetKey(KeyCode.DownArrow))
+                else if (keyboard.downArrowKey.isPressed || gamepad.rightStick.down.isPressed)
                 {
                     return -1;
                 }
@@ -297,11 +301,11 @@ namespace Rewired
             }
             else if (label == "WeaponsHorizontal")
             {
-                if (Input.GetKey(KeyCode.RightArrow))
+                if (keyboard.rightArrowKey.isPressed || gamepad.rightStick.right.isPressed)
                 {
                     return 1;
                 }
-                else if (Input.GetKey(KeyCode.LeftArrow))
+                else if (keyboard.leftArrowKey.isPressed || gamepad.rightStick.left.isPressed)
                 {
                     return -1;
                 }
@@ -310,7 +314,6 @@ namespace Rewired
                     return 0;
                 }
             }
-            */
 
             Debug.LogError("Axis " + label + " is not defined");
             return 0;
