@@ -665,7 +665,7 @@ PlayerSettings:
   webGLThreadsSupport: 0
   webGLWasmStreaming: 0
   scriptingDefineSymbols:
-    1: STEAM;SUPER_TILEMAP_EDITOR
+    1: DISABLESTEAMWORKS;SUPER_TILEMAP_EDITOR
     14: DISABLESTEAMWORKS;SUPER_TILEMAP_EDITOR
     27: SUPER_TILEMAP_EDITOR;DISABLESTEAMWORKS
   platformArchitecture:
