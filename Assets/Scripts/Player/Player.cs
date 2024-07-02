@@ -386,7 +386,7 @@ public partial class Player : Damageable, IPausable, IHasTeam, IHasVelocity, IRe
         set
         {
             _playerId = value;
-            _controller = ReInput.players.GetPlayer(_playerId);
+            _controller = ReInput.players[_playerId];
         }
     }
 
@@ -532,7 +532,7 @@ public partial class Player : Damageable, IPausable, IHasTeam, IHasVelocity, IRe
         _attackSounds = new Dictionary<float, AudioClip>() { { 1, attackSound } };
         _originalPalette = Resources.Load<Texture2D>("Palettes/Player/PlayerPalette");
         _palette = _originalPalette;
-        _controller = ReInput.players.GetPlayer(_playerId);
+        _controller = ReInput.players[_playerId];
 
         if (!mainCamera) { mainCamera = MainCamera.instance; }
     }

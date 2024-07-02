@@ -30,7 +30,7 @@ public class MenuOptions : MonoBehaviour
 
     public virtual IEnumerator Start()
     {
-        if (_controller == null) { _controller = useSystemPlayer ? ReInput.players.SystemPlayer : ReInput.players.GetPlayer(0); }
+        if (_controller == null) { _controller = ReInput.players[0]; }
 
         yield return null;
 

@@ -19,7 +19,7 @@ public class EndingController : MonoBehaviour
     public IEnumerator Start()
     {
         yield return new WaitForSeconds(1f);
-        _controller = ReInput.players.SystemPlayer;        
+        _controller = ReInput.players[0];        
         _audioSource = GetComponent<AudioSource>();
         _ready = true;
     }

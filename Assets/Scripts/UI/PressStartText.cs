@@ -13,7 +13,7 @@ public class PressStartText : MonoBehaviour
 
     private void Awake()
     {
-        _controller = ReInput.players.SystemPlayer;
+        _controller = ReInput.players[0];
         _startText = GetComponentInChildren<Text>();
         _button = GetComponentInChildren<SetImageForControl>();
         _lastActive = _controller.controllers.Joysticks.Count > 0 ? ControllerType.Joystick : ControllerType.Keyboard;

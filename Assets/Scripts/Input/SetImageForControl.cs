@@ -16,13 +16,13 @@ public class SetImageForControl : MonoBehaviour
 
     public void Start()
     {
-        SetImage();
-        if (PauseMenu.instance) { PauseMenu.instance.onHide += SetImage; }
+        //SetImage();
+        //if (PauseMenu.instance) { PauseMenu.instance.onHide += SetImage; }
     }
 
     public void SetImage()
     {
-        var p = useSystemPlayer ? ReInput.players.SystemPlayer : ReInput.players.GetPlayer(playerID); // just use Player 0 in this example
+        var p = useSystemPlayer ? ReInput.players[0] : ReInput.players[playerID]; // just use Player 0 in this example
 
         // Get the last active controller the Player was using
 #if UNITY_SWITCH //only look for Joysticks

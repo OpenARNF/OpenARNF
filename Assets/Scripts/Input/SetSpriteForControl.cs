@@ -33,7 +33,7 @@ public class SetSpriteForControl : MonoBehaviour
 
     public void SetSprite()
     {
-        var p = ReInput.players.GetPlayer(playerId); // just use Player 0 in this example
+        var p = ReInput.players[playerId]; // just use Player 0 in this example
 
         // Get the last active controller the Player was using
 #if UNITY_SWITCH //only look for Joysticks

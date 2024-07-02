@@ -25,7 +25,7 @@ public class CoOpControlsHint : MonoBehaviour
     {
         _followTransform = followTransform;
 
-        var p = ReInput.players.GetPlayer(id);
+        var p = ReInput.players[id];
 
         Controller activeController = p.controllers.GetLastActiveController();
         if (activeController == null)

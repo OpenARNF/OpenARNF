@@ -21,7 +21,7 @@ public class SplashScreens : MonoBehaviour
 
     private IEnumerator Start()
     {
-        _controller = ReInput.players.GetSystemPlayer();
+        _controller = ReInput.players[0];
 
         yield return new WaitForSeconds(0.75f);
 #if !UNITY_SWITCH || UNITY_EDITOR

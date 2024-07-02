@@ -30,7 +30,7 @@ public class ScreenState : MonoBehaviour
     {
         if (_controller == null)
         {
-            _controller = useSystemPlayer ? ReInput.players.SystemPlayer : ReInput.players.GetPlayer(0);
+            _controller = ReInput.players[0];
         }
     }
 

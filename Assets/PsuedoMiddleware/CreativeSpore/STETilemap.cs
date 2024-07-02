@@ -544,7 +544,13 @@ namespace CreativeSpore.SuperTilemapEditor
 
         public void Erase(Vector3 p)
         {
-            throw new NotImplementedException();
+            Vector2 vector2 = new Vector2(p.x, p.y);
+            int gridX = BrushUtil.GetGridX(vector2, CellSize);
+            int gridY = BrushUtil.GetGridY(vector2, CellSize);
+            TilemapChunk chunk = GetOrCreateTileChunk(gridX, gridY, false);
+            SetTileData(gridX, gridY, Tileset.k_TileData_Empty);
+            chunk.UpdateMesh();
+            chunk.UpdateColliders();
         }
 
         public void Trim()

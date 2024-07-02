@@ -20,13 +20,213 @@ namespace Rewired
         public static ContollerStatusChanged ControllerConnectedEvent;
         public static ContollerStatusChanged ControllerDisconnectedEvent;
         public static ControllerHelper controllers = new ControllerHelper();
-        public static PlayerHelper players = new PlayerHelper();
-        public static Player SystemPlayer
-        {
-            get { return players.SystemPlayer; }
-
-        }
+        public static List<Player> players = CreatePlayers(); 
         public static MappingHelper mapping = new MappingHelper();
+
+        private static List<Player> CreatePlayers() 
+        {
+            List<Player> playerList = new List<Player>();
+            for (int i = 0; i < Gamepad.all.Count; i++) 
+            {
+                Gamepad gp = Gamepad.all[i];
+                Player pl = new Player(i, gp); 
+                playerList.Add(pl);
+            }
+            Player keyboardPlayer = new Player(Gamepad.all.Count, UnityEngine.InputSystem.Keyboard.current);
+            playerList.Add(keyboardPlayer);
+            return playerList;
+        }
+    }
+
+    public class Player
+    {
+        public readonly ControllerHelper controllers = new ControllerHelper();
+
+        private int _id;
+        private UnityEngine.InputSystem.Keyboard keyboard; 
+        private Gamepad gamepad; 
+
+        public Player(int id, UnityEngine.InputSystem.Keyboard keyboard)
+        {
+            this._id = id;
+            this.keyboard = keyboard;
+            this.gamepad = null;
+        }
+
+        public Player(int id, Gamepad gamepad)
+        {
+            this._id = id;
+            this.gamepad = gamepad;
+            this.keyboard = null;
+        }
+
+        public int id
+        {
+            get { return this._id; }
+        }
+
+        private List<ButtonControl> GetControlsNullable(string label)
+        {
+            switch (label)
+            {
+                case "UISubmit": 
+                    return new List<ButtonControl>{keyboard?.enterKey, gamepad?.aButton};
+                case "UICancel":
+                    return new List<ButtonControl>{keyboard?.escapeKey, gamepad?.bButton, gamepad?.startButton};
+                case "UIUp":
+                    return new List<ButtonControl>{keyboard?.upArrowKey, gamepad?.dpad?.up, gamepad?.leftStick?.up};
+                case "UIDown":
+                    return new List<ButtonControl>{keyboard?.downArrowKey, gamepad?.dpad?.down, gamepad?.leftStick?.down};
+                case "UILeft":
+                    return new List<ButtonControl>{keyboard?.leftArrowKey, gamepad?.dpad?.left, gamepad?.leftStick?.left};
+                case "UIRight":
+                    return new List<ButtonControl>{keyboard?.rightArrowKey, gamepad?.dpad?.right, gamepad?.leftStick?.right};
+                case "Pause":
+                    return new List<ButtonControl>{keyboard?.escapeKey, gamepad?.startButton};
+                case "ExpandMap":
+                    return new List<ButtonControl>{keyboard?.mKey, gamepad?.selectButton};
+                case "Jump":
+                    return new List<ButtonControl>{keyboard?.spaceKey, gamepad?.aButton};
+                case "Attack":
+                    return new List<ButtonControl>{keyboard?.jKey, gamepad?.xButton};
+                case "AngleUp":
+                    return new List<ButtonControl>{keyboard?.iKey, gamepad?.rightTrigger};
+                case "AngleDown":
+                    return new List<ButtonControl>{keyboard?.kKey, gamepad?.leftTrigger};
+                case "SpecialMove":
+                    return new List<ButtonControl>{keyboard?.lKey, gamepad?.bButton};
+                case "ActivatedItem":
+                    return new List<ButtonControl>{keyboard?.uKey, gamepad?.yButton};
+                case "PageRight":
+                    return new List<ButtonControl>{keyboard?.commaKey, gamepad?.rightShoulder};
+                case "PageLeft":
+                    return new List<ButtonControl>{keyboard?.periodKey, gamepad?.leftShoulder};
+                case "LockPosition":
+                    return new List<ButtonControl>{keyboard?.leftCtrlKey, gamepad?.leftStickButton};
+                case "WeaponWheel":
+                    return new List<ButtonControl>{keyboard?.pKey, gamepad?.rightStickButton};
+                case "WeaponsCancel":
+                    return new List<ButtonControl>{keyboard?.deleteKey};
+                case "CoOpEnterGame":
+                    return new List<ButtonControl>{keyboard?.endKey, gamepad?.startButton};
+                case "CoOpTeleport":
+                    return new List<ButtonControl>{gamepad?.rightStickButton};
+                default:
+                    Debug.LogError(label + " is not defined");
+                    return new List<ButtonControl>();
+            }
+        }
+
+        private List<ButtonControl> GetControls(string label)
+        {
+            List<ButtonControl> lstWithNulls = GetControlsNullable(label);
+            List<ButtonControl> lst = new List<ButtonControl>();
+            foreach (ButtonControl bce in lstWithNulls) 
+            {
+                if (bce != null) 
+                {
+                    lst.Add(bce);
+                } 
+            } 
+            return lst;
+        }
+
+
+        public bool GetButtonDown(string label)
+        {
+            foreach (var key in GetControls(label))
+            {
+                if (key.wasPressedThisFrame)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+
+        public bool GetButtonUp(string label)
+        {
+                foreach (var key in GetControls(label))
+                {
+                    if (key.wasReleasedThisFrame)
+                    {
+                        return true;
+                    }
+                }
+                return false;
+        }
+
+
+        public bool GetButton(string label)
+        {
+                foreach (var key in GetControls(label))
+                {
+                    if (key.isPressed)
+                    {
+                        return true;
+                    }
+                }
+                return false;
+        }
+
+        public bool GetAnyButton()
+        {
+            return GetButton("UISubmit") || GetButton("UICancel");
+        }
+
+        public bool GetAnyButtonDown()
+        {
+            return GetButtonDown("UISubmit") || GetButtonDown("UICancel");
+        }
+
+        public float GetAxis(string label)
+        {
+            if (keyboard != null) 
+            {
+                switch(label) 
+                {
+                    case "Vertical":
+                        return keyboard.wKey.isPressed ? 1 : (keyboard.sKey.isPressed ? -1 : 0);
+                    case "Horizontal":
+                        return keyboard.dKey.isPressed ? 1 : (keyboard.aKey.isPressed ? -1 : 0);
+                    case "WeaponsVertical":
+                        return keyboard.upArrowKey.isPressed ? 1 : (keyboard.downArrowKey.isPressed ? -1 : 0);
+                    case "WeaponsHorizontal":
+                        return keyboard.rightArrowKey.isPressed ? 1 : (keyboard.leftArrowKey.isPressed ? -1 : 0);
+                    default:
+                        Debug.LogError(label + " is not defined");
+                        return 0; 
+                }
+            }
+
+            if (gamepad != null) 
+            {
+                switch(label) 
+                {
+                    case "Vertical":
+                    case "CoOpMoveVertical":
+                        return gamepad.dpad.up.isPressed || gamepad.leftStick.up.isPressed ? 1 : (gamepad.dpad.down.isPressed || gamepad.leftStick.down.isPressed ? -1 : 0);
+                    case "Horizontal":
+                    case "CoOpMoveHorizontal":
+                        return gamepad.dpad.right.isPressed || gamepad.leftStick.right.isPressed ? 1 : (gamepad.dpad.left.isPressed || gamepad.leftStick.left.isPressed ? -1 : 0);
+                    case "WeaponsVertical":
+                        return gamepad.rightStick.up.isPressed ? 1 : (gamepad.rightStick.down.isPressed ? -1 : 0);
+                    case "WeaponsHorizontal":
+                        return gamepad.rightStick.right.isPressed ? 1 : (gamepad.rightStick.left.isPressed ? -1 : 0);
+                    case "CoOpShootVertical":
+                        return gamepad.yButton.isPressed ? 1 : (gamepad.aButton.isPressed ? -1 : 0);
+                    case "CoOpShootHorizontal":
+                        return gamepad.bButton.isPressed ? 1 : (gamepad.xButton.isPressed ? -1 : 0);
+                    default:
+                        Debug.LogError(label + " is not defined");
+                        return 0; 
+                }
+            }
+
+            Debug.LogError("Axis " + label + " is not defined");
+            return 0;
+        }
     }
 
     public class MappingHelper
@@ -66,7 +266,7 @@ namespace Rewired
             }
             else
             {
-                Debug.LogError("No InputAction defined for " + name);
+                //Debug.LogError("No InputAction defined for " + name);
                 return null;
             }
         }
@@ -76,248 +276,6 @@ namespace Rewired
 
     public class ControllerStatusChangedEventArgs
     {
-    }
-
-    public class PlayerHelper
-    {
-        public Player SystemPlayer = new Player();
-
-        public Player GetSystemPlayer()
-        {
-            return SystemPlayer;
-        }
-
-        public int playerCount
-        {
-            //Only a single player is supported with this class. BUY REWIRED!
-            get { return 1; }
-        }
-
-        public Player GetPlayer(int id)
-        {
-            if (id == 0)
-            {
-                return SystemPlayer;
-            }
-            else
-            {
-                return null;
-            }
-        }
-
-        public List<Player> GetActivePlayers()
-        {
-            return new List<Player>{SystemPlayer};
-        }
-    }
-
-    public class Player
-    {
-        public readonly ControllerHelper controllers = new ControllerHelper();
-        private static UnityEngine.InputSystem.Keyboard keyboard = UnityEngine.InputSystem.Keyboard.current;
-        private static UnityEngine.InputSystem.Gamepad gamepad = UnityEngine.InputSystem.Gamepad.current;
-
-        public int id
-        {
-            get { return 0; }
-        }
-
-        public string name
-        {
-            get { return "OPEN ARNF DEBUG"; }
-        }
-
-
-        private Dictionary<string, List<ButtonControl>> _keyValues = new Dictionary<string, List<ButtonControl>>()
-        {
-            {"UISubmit", new List<ButtonControl>{keyboard.enterKey, gamepad.aButton} },
-            {"UICancel", new List<ButtonControl>{keyboard.escapeKey, gamepad.bButton, gamepad.startButton} },
-            {"UIUp", new List<ButtonControl>{keyboard.upArrowKey, gamepad.dpad.up, gamepad.leftStick.up} },
-            {"UIDown", new List<ButtonControl>{keyboard.downArrowKey, gamepad.dpad.down, gamepad.leftStick.down} },
-            {"UILeft", new List<ButtonControl>{keyboard.leftArrowKey, gamepad.dpad.left, gamepad.leftStick.left} },
-            {"UIRight", new List<ButtonControl>{keyboard.rightArrowKey, gamepad.dpad.right, gamepad.leftStick.right} },
-            {"Pause", new List<ButtonControl>{keyboard.escapeKey, gamepad.startButton} },
-            {"ExpandMap", new List<ButtonControl>{keyboard.mKey, gamepad.selectButton} },
-            /*
-            {"Up", new List<ButtonControl>{keyboard.wKey, gamepad.dpad.up} },
-            {"Down", new List<ButtonControl>{keyboard.sKey, gamepad.dpad.down} },
-            {"Left", new List<ButtonControl>{keyboard.aKey, gamepad.dpad.left} },
-            {"Right", new List<ButtonControl>{keyboard.dKey, gamepad.dpad.right} },
-            */
-            {"Jump", new List<ButtonControl>{keyboard.spaceKey, gamepad.aButton} },
-            {"Attack", new List<ButtonControl>{keyboard.jKey, gamepad.xButton} },
-            {"AngleUp", new List<ButtonControl>{keyboard.iKey, gamepad.rightTrigger} },
-            {"AngleDown", new List<ButtonControl>{keyboard.kKey, gamepad.leftTrigger} },
-            {"SpecialMove", new List<ButtonControl>{keyboard.lKey, gamepad.bButton} },
-            {"ActivatedItem", new List<ButtonControl>{keyboard.uKey, gamepad.yButton} },
-            {"PageRight", new List<ButtonControl>{keyboard.commaKey, gamepad.rightShoulder} },
-            {"PageLeft", new List<ButtonControl>{keyboard.periodKey, gamepad.leftShoulder} },
-            {"LockPosition", new List<ButtonControl>{keyboard.leftCtrlKey, gamepad.leftStickButton} },
-            {"WeaponWheel", new List<ButtonControl>{keyboard.pKey, gamepad.rightStickButton} },
-            /*
-            {"CoinSlot", KeyCode.Insert },
-            {"WeaponCancel", KeyCode.Delete },
-            */
-        };
-
-        public bool GetButtonDown(string label)
-        {
-            if (_keyValues.TryGetValue(label, out var keyList))
-            {
-                foreach (var key in keyList)
-                {
-                    if (key.wasPressedThisFrame)
-                    {
-                        return true;
-                    }
-                }
-                return false;
-            }
-            else
-            {
-                Debug.LogError(label + " is not defined");
-                return false;
-            }
-        }
-
-
-        public bool GetButtonUp(string label)
-        {
-            if (_keyValues.TryGetValue(label, out var keyList))
-            {
-                foreach (var key in keyList)
-                {
-                    if (key.wasReleasedThisFrame)
-                    {
-                        return true;
-                    }
-                }
-                return false;
-            }
-            else
-            {
-                Debug.LogError(label + " is not defined");
-                return false;
-            }
-        }
-
-
-        public bool GetButton(string label)
-        {
-            if (_keyValues.TryGetValue(label, out var keyList))
-            {
-                foreach (var key in keyList)
-                {
-                    if (key.isPressed)
-                    {
-                        return true;
-                    }
-                }
-                return false;
-            }
-            else
-            {
-                Debug.LogError(label + " is not defined");
-                return false;
-            }
-        }
-
-        public bool GetAnyButton()
-        {
-            foreach (var bcList in _keyValues.Values)
-            {
-                foreach (var bc in bcList)
-                {
-                    if (bc.isPressed)
-                    {
-                        return true;
-                    }
-                }
-            }
-            return false;
-        }
-
-        public bool GetAnyButtonDown()
-        {
-            foreach (var bcList in _keyValues.Values)
-            {
-                foreach (var bc in bcList)
-                {
-                    if (bc.wasPressedThisFrame)
-                    {
-                        return true;
-                    }
-                }
-            }
-            return false;
-        }
-
-        public float GetAxis(string label)
-        {
-            if (label == "Vertical")
-            {
-                if (keyboard.wKey.isPressed || gamepad.dpad.up.isPressed || gamepad.leftStick.up.isPressed)
-                {
-                    return 1;
-                }
-                else if (keyboard.sKey.isPressed || gamepad.dpad.down.isPressed || gamepad.leftStick.down.isPressed)
-                {
-                    return -1;
-                }
-                else
-                {
-                    return 0;
-                }
-            }
-            else if (label == "Horizontal")
-            {
-                if (keyboard.dKey.isPressed || gamepad.dpad.right.isPressed || gamepad.leftStick.right.isPressed)
-                {
-                    return 1;
-                }
-                else if (keyboard.aKey.isPressed || gamepad.dpad.left.isPressed || gamepad.leftStick.left.isPressed)
-                {
-                    return -1;
-                }
-                else
-                {
-                    return 0;
-                }
-            }
-            else if (label == "WeaponsVertical")
-            {
-                if (keyboard.upArrowKey.isPressed || gamepad.rightStick.up.isPressed)
-                {
-                    return 1;
-                }
-                else if (keyboard.downArrowKey.isPressed || gamepad.rightStick.down.isPressed)
-                {
-                    return -1;
-                }
-                else
-                {
-                    return 0;
-                }
-            }
-            else if (label == "WeaponsHorizontal")
-            {
-                if (keyboard.rightArrowKey.isPressed || gamepad.rightStick.right.isPressed)
-                {
-                    return 1;
-                }
-                else if (keyboard.leftArrowKey.isPressed || gamepad.rightStick.left.isPressed)
-                {
-                    return -1;
-                }
-                else
-                {
-                    return 0;
-                }
-            }
-
-            Debug.LogError("Axis " + label + " is not defined");
-            return 0;
-        }
     }
 
     public class ControllerHelper
@@ -487,7 +445,7 @@ namespace Rewired
 
         public ActionElementMap GetFirstElementMapWithAction(Controller controller, int id, bool skipDisabledMaps)
         {
-            if (controller != ReInput.SystemPlayer.controllers.Keyboard)
+            if (controller != ReInput.players[0].controllers.Keyboard)
             {
                 Debug.LogError("Only the keyboard for the system player is supported by default in OpenARNF. ");
                 return null;

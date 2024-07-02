@@ -30,7 +30,6 @@ public class PlayerManager : MonoBehaviour
     public Material player4Material;
     private Player _player1;
     public Player player1 { get { return _player1; } }
-    private Rewired.Player[] _controllers = new Rewired.Player[maxCoOpBots];
     private List<Player> _players = new List<Player>();
     public List<Player> players { get { return _players; } }
     public float coOpMod = 1f;
@@ -86,9 +85,11 @@ public class PlayerManager : MonoBehaviour
 
     private void Start()
     {        
-        for (int i = 0; i < maxCoOpBots; i++)
+        int maxActivePlayers = maxCoOpBots;
+
+        if (maxActivePlayers > ReInput.players.Count) 
         {
-            _controllers[i] = ReInput.players.GetPlayer(i+1);
+            maxActivePlayers = ReInput.players.Count;
         }
 
         if (SaveGameManager.activeGame == null)
@@ -117,16 +118,14 @@ public class PlayerManager : MonoBehaviour
     {
         if (!DeathmatchManager.instance && Time.timeScale != 0)
         {
-            var count = Mathf.Min(_coOpPlayers.Length, _controllers.Length);
-            for (int i = 0; i < count; i++)
+            if (ReInput.players.Count > 1) 
             {
-                var controller = _controllers[i];
-                if(controller == null) { continue; }
-                if(_trueCoOp && controller == _player1.controller) { continue; }
+                var controller = ReInput.players[1];
+                //if(_trueCoOp && controller == _player1.controller) { continue; }
 
-                if (_controllers[i].GetButtonDown("CoOpEnterGame"))
+                if (controller.GetButtonDown("CoOpEnterGame"))
                 {
-                    var shouldJoin = _trueCoOp ? !_players.Any(p => p.controller == controller) : _coOpPlayers[i] == null;
+                    var shouldJoin = _trueCoOp ? !_players.Any(p => p.controller == controller) : _coOpPlayers[0] == null;
                     if (shouldJoin)
                     {
                         if (_trueCoOp)
@@ -135,15 +134,15 @@ public class PlayerManager : MonoBehaviour
                         }
                         else
                         {
-                            CoOpPlayerJoin(i);
+                            CoOpPlayerJoin();
                         }
                     }
                     else
                     {
-                        if (controlsHint[i].gameObject.activeInHierarchy)
+                        if (controlsHint[0].gameObject.activeInHierarchy)
                         {
-                            controlsHint[i].StopAllCoroutines();
-                            controlsHint[i].gameObject.SetActive(false);
+                            controlsHint[0].StopAllCoroutines();
+                            controlsHint[0].gameObject.SetActive(false);
                         }
 
                         if (_trueCoOp)
@@ -152,17 +151,17 @@ public class PlayerManager : MonoBehaviour
                         }
                         else
                         {
-                            _coOpPlayers[i].Despawn(true);
+                            _coOpPlayers[0].Despawn(true);
                         }
                     }
                 }
-                else if (joinAlert && _controllers[i].GetAnyButton())
+                else if (joinAlert && controller.GetAnyButton())
                 {
-                    bool showAlert = _trueCoOp ? !_players[i] : !_coOpPlayers[i];
+                    bool showAlert = _trueCoOp ? !_players[0] : !_coOpPlayers[0];
                     if (showAlert)
                     {
                         if (_alertRoutine != null) { StopCoroutine(_alertRoutine); }
-                        _alertRoutine = ShowJoinAlert(_controllers[i].id);
+                        _alertRoutine = ShowJoinAlert(controller.id);
                         StartCoroutine(_alertRoutine);
                     }
                 }
@@ -201,14 +200,14 @@ public class PlayerManager : MonoBehaviour
         FXManager.instance.SpawnFX(FXType.Teleportation, position);
     }
 
-    public void CoOpPlayerJoin(int id)
+    public void CoOpPlayerJoin()
     {
-        _coOpPlayers[id] = Instantiate(coOpOrbPrefab, _player1.transform.parent);
-        var controller = _controllers[id];
-        var coOpPlayer = _coOpPlayers[id];
+        _coOpPlayers[0] = Instantiate(coOpOrbPrefab, _player1.transform.parent);
+        var controller = ReInput.players[1];
+        var coOpPlayer = _coOpPlayers[0];
         coOpPlayer.transform.parent = _player1.transform.parent;
         coOpPlayer.Spawn(_player1, controller);
-        switch(id)
+        switch(0)
         {
             case 0:
                 if (SaveGameManager.activeGame != null) { SaveGameManager.activeGame.player2Entered = true; }
@@ -224,7 +223,7 @@ public class PlayerManager : MonoBehaviour
         }
         SaveGameManager.instance.Save();
 
-        controlsHint[id].Show(coOpPlayer.transform, controller.id);
+        controlsHint[0].Show(coOpPlayer.transform, controller.id);
         CalculateCoOpDamageMod();
 
         bool controllerConflict = false;
@@ -244,25 +243,27 @@ public class PlayerManager : MonoBehaviour
             }
         }
 
+/*
         if(controllerConflict)
         {
             Debug.LogError("Whoops! 2 Co-op bots were assigned the same controller! Correcting!");
             for (int i = 0; i < _controllers.Length; i++)
             {
-                _controllers[i] = ReInput.players.GetPlayer(i + 1);
+                _controllers[i] = ReInput.players[i + 1];
                 if(i < _coOpPlayers.Length && _coOpPlayers[i])
                 {
                     _coOpPlayers[i].controller = _controllers[i];
                 }
             }
         }
+*/
     }
 
     public IEnumerator ShowJoinAlert(int id)
     {
         var control = joinAlert.GetComponentInChildren<SetImageForControl>();
         control.playerID = id;
-        control.SetImage();
+        //control.SetImage();
 
         joinAlert.gameObject.SetActive(true);
         joinAlert.alpha = 1;

@@ -43,7 +43,7 @@ public class ItemSlotMachine : MonoBehaviour
     public void Initialize(int id, MajorItem[] items0, MajorItem[] items1, MajorItem[] items2)
     {
         _currentSlot = 0;
-        _controller = ReInput.players.GetPlayer(id);
+        _controller = ReInput.players[id];
         speed = initialSpeed;
         complete = false;
         result.Clear();

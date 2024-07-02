@@ -37,7 +37,7 @@ public class PauseMenu : MonoBehaviour
         }
         else
         {
-            _controller = ReInput.players.SystemPlayer;
+            _controller = ReInput.players[0];
         }
     }
 

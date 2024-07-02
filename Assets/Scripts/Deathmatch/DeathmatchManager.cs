@@ -151,7 +151,7 @@ public class DeathmatchManager : MonoBehaviour
             instance = this;
         }
 
-        _controllers.AddRange(ReInput.players.GetActivePlayers());
+        _controllers.AddRange(ReInput.players);
 
         totalScore = new Dictionary<Team, int>()
         {

@@ -72,7 +72,7 @@ public class AchievementScreen : MonoBehaviour
         _canvasGroup.alpha = 0;
 
         Time.timeScale = 0;
-        var controller = isTitleScreen ? ReInput.players.SystemPlayer : PlayerManager.instance.player1.controller;
+        var controller = isTitleScreen ? ReInput.players[0] : PlayerManager.instance.player1.controller;
 
         float waitTime;
         if (MusicController.instance.maxMusicVolume <= 0.1f)

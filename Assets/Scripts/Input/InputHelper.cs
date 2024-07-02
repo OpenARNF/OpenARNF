@@ -122,7 +122,7 @@ public class InputHelper : MonoBehaviour
 
     public void AssignSystemPlayerAllControllers(ControllerStatusChangedEventArgs args)
     {
-        var systemPlayer = ReInput.players.SystemPlayer;
+        var systemPlayer = ReInput.players[0];
         systemPlayer.controllers.ClearAllControllers();
         foreach (var controller in ReInput.controllers.Controllers)
         {
@@ -135,16 +135,16 @@ public class InputHelper : MonoBehaviour
 #else
     public void RestoreDefaultAssignments()
     {
-        for (int i = 0; i < ReInput.players.playerCount; i++)
+        for (int i = 0; i < ReInput.players.Count; i++)
         {
-            var p = ReInput.players.GetPlayer(i);
+            var p = ReInput.players[i];
             p.controllers.ClearAllControllers();
-            Debug.Log("Unassigning Controllers from " + p.name);
+            Debug.Log("Unassigning Controllers from " + p.id);
         }
 
-        for (int i = 0; i < ReInput.players.playerCount; i++)
+        for (int i = 0; i < ReInput.players.Count; i++)
         {
-            var p = ReInput.players.GetPlayer(i);
+            var p = ReInput.players[i];
             var maxP = i;
             var controller = ReInput.controllers.Controllers.FirstOrDefault(c =>
             {
@@ -163,7 +163,7 @@ public class InputHelper : MonoBehaviour
             }
             else
             {
-                Debug.LogWarning("No Unassigned Controller found for " + p.name);
+                Debug.LogWarning("No Unassigned Controller found for " + p.id);
             }
         }
 
@@ -178,7 +178,7 @@ public class InputHelper : MonoBehaviour
             return;
         }
 
-        var player1 = ReInput.players.GetPlayer(0);
+        var player1 = ReInput.players[0];
 
 #if ARCADE
         if (lastControllerUsed.type == ControllerType.Keyboard) { return; }
@@ -221,13 +221,18 @@ public class InputHelper : MonoBehaviour
             }
         }
 #else
-        var player2 = ReInput.players.GetPlayer(1);
+        Rewired.Player player2 = null;
+        
+        if (ReInput.players.Count >= 2) 
+        {
+            player2 = ReInput.players[1];
+        }
 
         Debug.Log("Assigning " + lastControllerUsed.name + " to player 1.");
         player1.controllers.ClearAllControllers();
         player1.controllers.AddController(lastControllerUsed, true);
 
-        ReInput.players.SystemPlayer.controllers.AddController(lastControllerUsed, false);
+        ReInput.players[0].controllers.AddController(lastControllerUsed, false);
 
         if (player2 != null)
         {
@@ -259,7 +264,7 @@ public class InputHelper : MonoBehaviour
 
         for (int i = 1; i < players; i++)
         {
-            var player = ReInput.players.GetPlayer(i);
+            var player = ReInput.players[i];
             if (player.controllers.joystickCount <= 0)
             {
                 foreach (var joystick in ReInput.controllers.Joysticks)
@@ -291,7 +296,7 @@ public class InputHelper : MonoBehaviour
             {
                 if (!PlayerManager.instance.coOpPlayers[i]) continue;
 
-                var rPlayer = ReInput.players.GetPlayer(i+1);
+                var rPlayer = ReInput.players[i+1];
                 if (rPlayer.controllers.joystickCount == 0 && !rPlayer.controllers.hasKeyboard)
                 {
                     PlayerManager.instance.coOpPlayers[i].Despawn(true);

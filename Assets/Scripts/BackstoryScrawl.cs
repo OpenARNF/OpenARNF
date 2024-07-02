@@ -13,7 +13,7 @@ public class BackstoryScrawl : MonoBehaviour
 
     public IEnumerator Start()
     {
-        _controller = ReInput.players.SystemPlayer;
+        _controller = ReInput.players[0];
         yield return new WaitForSeconds(0.25f);
         _ready = true;
     }
