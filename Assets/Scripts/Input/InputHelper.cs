@@ -95,7 +95,7 @@ public class InputHelper : MonoBehaviour
 #if DEBUG && !UNITY_SWITCH
     private void LateUpdate()
     {
-        if (UnityEngine.InputSystem.Keyboard.current.f12Key.isPressed)
+        if (null != UnityEngine.InputSystem.Keyboard.current && UnityEngine.InputSystem.Keyboard.current.f12Key.isPressed)
         {
             string path;
             if (Application.isEditor)

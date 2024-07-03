@@ -45,13 +45,13 @@ public class PauseMenu : MonoBehaviour
     {
         if (_skipUpdate) return;
 
-        if(keyboard.leftShiftKey.isPressed && keyboard.rKey.isPressed)
+        if(null != keyboard && keyboard.leftShiftKey.isPressed && keyboard.rKey.isPressed)
         {
             UISounds.instance.Confirm();
             StartCoroutine(RestartShortcut());
         }
 
-        if (CanPause() && (PausePressed() || keyboard.escapeKey.isPressed))
+        if (CanPause() && (PausePressed() || (null != keyboard && keyboard.escapeKey.isPressed)))
         {
             Show();
             return;

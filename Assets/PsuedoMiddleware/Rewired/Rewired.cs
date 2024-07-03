@@ -26,6 +26,10 @@ namespace Rewired
         private static List<Player> CreatePlayers() 
         {
             List<Player> playerList = new List<Player>();
+#if UNITY_ANDROID
+            Player androidPlayer = new Player(0);
+            playerList.Add(androidPlayer);
+#else
             for (int i = 0; i < Gamepad.all.Count; i++) 
             {
                 Gamepad gp = Gamepad.all[i];
@@ -34,6 +38,7 @@ namespace Rewired
             }
             Player keyboardPlayer = new Player(Gamepad.all.Count, UnityEngine.InputSystem.Keyboard.current);
             playerList.Add(keyboardPlayer);
+#endif
             return playerList;
         }
     }
@@ -44,7 +49,14 @@ namespace Rewired
 
         private int _id;
         private UnityEngine.InputSystem.Keyboard keyboard; 
-        private Gamepad gamepad; 
+        private Gamepad gamepad;
+
+        public Player(int id)
+        {
+            this._id = id;
+            this.keyboard = null;
+            this.gamepad = null;
+        }
 
         public Player(int id, UnityEngine.InputSystem.Keyboard keyboard)
         {
@@ -67,6 +79,11 @@ namespace Rewired
 
         private List<ButtonControl> GetControlsNullable(string label)
         {
+#if UNITY_ANDROID
+            if (this.gamepad != UnityEngine.InputSystem.Gamepad.current) {
+                this.gamepad = UnityEngine.InputSystem.Gamepad.current;
+            }
+#endif
             switch (label)
             {
                 case "UISubmit": 
