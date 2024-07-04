@@ -15,7 +15,7 @@ public class MenuExtensions : MonoBehaviour
     [MenuItem("Extensions/Snap to Grid 0.5f %#g")]
     static void MenuSnapToGridPoint5()
     {
-        foreach (Transform t in Selection.GetTransforms(SelectionMode.TopLevel | SelectionMode.OnlyUserModifiable))
+        foreach (Transform t in Selection.GetTransforms(SelectionMode.TopLevel | SelectionMode.Editable))
         {
             t.position = new Vector3(
                 Mathf.Round(t.position.x / 0.5f) * 0.5f,
@@ -29,7 +29,7 @@ public class MenuExtensions : MonoBehaviour
     static void MenuSnapToPixel()
     {
         var p = 1 / 32d;
-        foreach (Transform t in Selection.GetTransforms(SelectionMode.TopLevel | SelectionMode.OnlyUserModifiable))
+        foreach (Transform t in Selection.GetTransforms(SelectionMode.TopLevel | SelectionMode.Editable))
         {
             var x = t.position.x / p;
             var y = t.position.y / p;
@@ -84,7 +84,7 @@ public class MenuExtensions : MonoBehaviour
     [MenuItem("Extensions/Snap Polygon Collider")]
     static void MenuSnapPolygonCollider()
     {
-        foreach (Transform t in Selection.GetTransforms(SelectionMode.TopLevel | SelectionMode.OnlyUserModifiable))
+        foreach (Transform t in Selection.GetTransforms(SelectionMode.TopLevel | SelectionMode.Editable))
         {
             var polygonCollider = t.GetComponent<PolygonCollider2D>();
             if (polygonCollider)
@@ -581,7 +581,7 @@ public class MenuExtensions : MonoBehaviour
     [MenuItem("Extensions/Rotate 90 %&r")]
     static void Rotate90()
     {
-        foreach (Transform t in Selection.GetTransforms(SelectionMode.TopLevel | SelectionMode.OnlyUserModifiable))
+        foreach (Transform t in Selection.GetTransforms(SelectionMode.TopLevel | SelectionMode.Editable))
         {
             var eulerRotation = t.rotation.eulerAngles;
             var eulerZ = (eulerRotation.z) + 90 % 360;
@@ -592,7 +592,7 @@ public class MenuExtensions : MonoBehaviour
     [MenuItem("Extensions/Flip 180  &y")]
     static void Flip180Y()
     {
-        foreach (Transform t in Selection.GetTransforms(SelectionMode.TopLevel | SelectionMode.OnlyUserModifiable))
+        foreach (Transform t in Selection.GetTransforms(SelectionMode.TopLevel | SelectionMode.Editable))
         {
             var eulerRotation = t.rotation.eulerAngles;
             var eulerX = (eulerRotation.x + 180) % 360;
@@ -603,7 +603,7 @@ public class MenuExtensions : MonoBehaviour
     [MenuItem("Extensions/Flip 180 &f")]
     static void Flip180()
     {
-        foreach (Transform t in Selection.GetTransforms(SelectionMode.TopLevel | SelectionMode.OnlyUserModifiable))
+        foreach (Transform t in Selection.GetTransforms(SelectionMode.TopLevel | SelectionMode.Editable))
         {
             var eulerRotation = t.rotation.eulerAngles;
             t.rotation = Quaternion.Euler(eulerRotation.x, eulerRotation.y == 0 ? 180 : 0, eulerRotation.z);
