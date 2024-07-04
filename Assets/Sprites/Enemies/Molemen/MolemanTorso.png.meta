@@ -261,7 +261,7 @@ TextureImporter:
       213: 21300170
     second: MolemanTorso_35
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -278,9 +278,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -290,8 +293,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -312,10 +315,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -327,6 +335,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -339,6 +348,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -351,6 +361,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -363,6 +374,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -375,6 +387,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
@@ -1146,9 +1159,45 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: phase3
+    nameFileIdTable:
+      MolemanTorso_0: 21300100
+      MolemanTorso_1: 21300102
+      MolemanTorso_10: 21300120
+      MolemanTorso_11: 21300122
+      MolemanTorso_12: 21300124
+      MolemanTorso_13: 21300126
+      MolemanTorso_14: 21300128
+      MolemanTorso_15: 21300130
+      MolemanTorso_16: 21300132
+      MolemanTorso_17: 21300134
+      MolemanTorso_18: 21300136
+      MolemanTorso_19: 21300138
+      MolemanTorso_2: 21300104
+      MolemanTorso_20: 21300140
+      MolemanTorso_21: 21300142
+      MolemanTorso_22: 21300144
+      MolemanTorso_23: 21300146
+      MolemanTorso_24: 21300148
+      MolemanTorso_25: 21300150
+      MolemanTorso_26: 21300152
+      MolemanTorso_27: 21300154
+      MolemanTorso_28: 21300156
+      MolemanTorso_29: 21300158
+      MolemanTorso_3: 21300106
+      MolemanTorso_30: 21300160
+      MolemanTorso_31: 21300162
+      MolemanTorso_32: 21300164
+      MolemanTorso_33: 21300166
+      MolemanTorso_34: 21300168
+      MolemanTorso_35: 21300170
+      MolemanTorso_4: 21300108
+      MolemanTorso_5: 21300110
+      MolemanTorso_6: 21300112
+      MolemanTorso_7: 21300114
+      MolemanTorso_8: 21300116
+      MolemanTorso_9: 21300118
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

@@ -75,7 +75,7 @@ TextureImporter:
       213: -7098496744868854412
     second: CorruptedMinerBotMeat_23
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -92,9 +92,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -104,8 +107,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -126,9 +129,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -140,6 +149,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -152,6 +162,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -164,6 +175,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -683,9 +695,33 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      CorruptedMinerBotMeat_0: 2567552388967159392
+      CorruptedMinerBotMeat_1: -2295934094499303446
+      CorruptedMinerBotMeat_10: -6705739619587251757
+      CorruptedMinerBotMeat_11: 3937390547807057677
+      CorruptedMinerBotMeat_12: -7711694747641256517
+      CorruptedMinerBotMeat_13: -1793283444225375638
+      CorruptedMinerBotMeat_14: -139158518133602534
+      CorruptedMinerBotMeat_15: 1361568727854662667
+      CorruptedMinerBotMeat_16: 705827712218852727
+      CorruptedMinerBotMeat_17: -5573455373405569054
+      CorruptedMinerBotMeat_18: -1429987918945709877
+      CorruptedMinerBotMeat_19: 828856889062081158
+      CorruptedMinerBotMeat_2: -5755506238454626670
+      CorruptedMinerBotMeat_20: 2655305159338608308
+      CorruptedMinerBotMeat_21: -4085436534785584327
+      CorruptedMinerBotMeat_22: -6134539221858752731
+      CorruptedMinerBotMeat_23: -7098496744868854412
+      CorruptedMinerBotMeat_3: -800942654211784398
+      CorruptedMinerBotMeat_4: 4852635448721874800
+      CorruptedMinerBotMeat_5: -7166146236723011621
+      CorruptedMinerBotMeat_6: -2750267939629532548
+      CorruptedMinerBotMeat_7: -4440149318019507829
+      CorruptedMinerBotMeat_8: -7041803943386875708
+      CorruptedMinerBotMeat_9: -5534906365261916149
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

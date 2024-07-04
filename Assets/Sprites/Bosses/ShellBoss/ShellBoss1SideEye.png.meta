@@ -111,7 +111,7 @@ TextureImporter:
       213: 21300070
     second: ShellBoss1SideEye_33
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -128,9 +128,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -140,8 +143,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -162,9 +165,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -176,6 +185,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -188,6 +198,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -200,6 +211,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -212,6 +224,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
@@ -941,9 +954,43 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: shellboss
+    nameFileIdTable:
+      ShellBoss1SideEye_0: 21300004
+      ShellBoss1SideEye_1: 21300006
+      ShellBoss1SideEye_10: 21300024
+      ShellBoss1SideEye_11: 21300026
+      ShellBoss1SideEye_12: 21300028
+      ShellBoss1SideEye_13: 21300030
+      ShellBoss1SideEye_14: 21300032
+      ShellBoss1SideEye_15: 21300034
+      ShellBoss1SideEye_16: 21300036
+      ShellBoss1SideEye_17: 21300038
+      ShellBoss1SideEye_18: 21300040
+      ShellBoss1SideEye_19: 21300042
+      ShellBoss1SideEye_2: 21300008
+      ShellBoss1SideEye_20: 21300044
+      ShellBoss1SideEye_21: 21300046
+      ShellBoss1SideEye_22: 21300048
+      ShellBoss1SideEye_23: 21300050
+      ShellBoss1SideEye_24: 21300052
+      ShellBoss1SideEye_25: 21300054
+      ShellBoss1SideEye_26: 21300056
+      ShellBoss1SideEye_27: 21300058
+      ShellBoss1SideEye_28: 21300060
+      ShellBoss1SideEye_29: 21300062
+      ShellBoss1SideEye_3: 21300010
+      ShellBoss1SideEye_30: 21300064
+      ShellBoss1SideEye_31: 21300066
+      ShellBoss1SideEye_32: 21300068
+      ShellBoss1SideEye_33: 21300070
+      ShellBoss1SideEye_4: 21300012
+      ShellBoss1SideEye_5: 21300014
+      ShellBoss1SideEye_6: 21300016
+      ShellBoss1SideEye_7: 21300018
+      ShellBoss1SideEye_8: 21300020
+      ShellBoss1SideEye_9: 21300022
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

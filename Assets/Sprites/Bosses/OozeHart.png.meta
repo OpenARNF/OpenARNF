@@ -306,7 +306,7 @@ TextureImporter:
       213: 21300200
     second: OozeHart_100
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -323,9 +323,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -335,8 +338,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -357,9 +360,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -371,6 +380,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -383,6 +393,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -395,6 +406,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -407,6 +419,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -419,6 +432,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
@@ -2555,9 +2569,110 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: forestslums
+    nameFileIdTable:
+      OozeHart_0: 21300000
+      OozeHart_1: 21300002
+      OozeHart_10: 21300020
+      OozeHart_100: 21300200
+      OozeHart_11: 21300022
+      OozeHart_12: 21300024
+      OozeHart_13: 21300026
+      OozeHart_14: 21300028
+      OozeHart_15: 21300030
+      OozeHart_16: 21300032
+      OozeHart_17: 21300034
+      OozeHart_18: 21300036
+      OozeHart_19: 21300038
+      OozeHart_2: 21300004
+      OozeHart_20: 21300040
+      OozeHart_21: 21300042
+      OozeHart_22: 21300044
+      OozeHart_23: 21300046
+      OozeHart_24: 21300048
+      OozeHart_25: 21300050
+      OozeHart_26: 21300052
+      OozeHart_27: 21300054
+      OozeHart_28: 21300056
+      OozeHart_29: 21300058
+      OozeHart_3: 21300006
+      OozeHart_30: 21300060
+      OozeHart_31: 21300062
+      OozeHart_32: 21300064
+      OozeHart_33: 21300066
+      OozeHart_34: 21300068
+      OozeHart_35: 21300070
+      OozeHart_36: 21300072
+      OozeHart_37: 21300074
+      OozeHart_38: 21300076
+      OozeHart_39: 21300078
+      OozeHart_4: 21300008
+      OozeHart_40: 21300080
+      OozeHart_41: 21300082
+      OozeHart_42: 21300084
+      OozeHart_43: 21300086
+      OozeHart_44: 21300088
+      OozeHart_45: 21300090
+      OozeHart_46: 21300092
+      OozeHart_47: 21300094
+      OozeHart_48: 21300096
+      OozeHart_49: 21300098
+      OozeHart_5: 21300010
+      OozeHart_50: 21300100
+      OozeHart_51: 21300102
+      OozeHart_52: 21300104
+      OozeHart_53: 21300106
+      OozeHart_54: 21300108
+      OozeHart_55: 21300110
+      OozeHart_56: 21300112
+      OozeHart_57: 21300114
+      OozeHart_58: 21300116
+      OozeHart_59: 21300118
+      OozeHart_6: 21300012
+      OozeHart_60: 21300120
+      OozeHart_61: 21300122
+      OozeHart_62: 21300124
+      OozeHart_63: 21300126
+      OozeHart_64: 21300128
+      OozeHart_65: 21300130
+      OozeHart_66: 21300132
+      OozeHart_67: 21300134
+      OozeHart_68: 21300136
+      OozeHart_69: 21300138
+      OozeHart_7: 21300014
+      OozeHart_70: 21300140
+      OozeHart_71: 21300142
+      OozeHart_72: 21300144
+      OozeHart_73: 21300146
+      OozeHart_74: 21300148
+      OozeHart_75: 21300150
+      OozeHart_76: 21300152
+      OozeHart_77: 21300154
+      OozeHart_78: 21300156
+      OozeHart_79: 21300158
+      OozeHart_8: 21300016
+      OozeHart_80: 21300160
+      OozeHart_81: 21300162
+      OozeHart_82: 21300164
+      OozeHart_83: 21300166
+      OozeHart_84: 21300168
+      OozeHart_85: 21300170
+      OozeHart_86: 21300172
+      OozeHart_87: 21300174
+      OozeHart_88: 21300176
+      OozeHart_89: 21300178
+      OozeHart_9: 21300018
+      OozeHart_90: 21300180
+      OozeHart_91: 21300182
+      OozeHart_92: 21300184
+      OozeHart_93: 21300186
+      OozeHart_94: 21300188
+      OozeHart_95: 21300190
+      OozeHart_96: 21300192
+      OozeHart_97: 21300194
+      OozeHart_98: 21300196
+      OozeHart_99: 21300198
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

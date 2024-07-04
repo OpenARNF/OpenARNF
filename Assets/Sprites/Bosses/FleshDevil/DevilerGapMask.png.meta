@@ -240,7 +240,7 @@ TextureImporter:
       213: -8307007831384743492
     second: DevilerGapMask_63
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -257,9 +257,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -269,8 +272,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -291,9 +294,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -305,6 +314,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -317,6 +327,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -1676,9 +1687,73 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      DevilerGapMask_0: 6132020989236396874
+      DevilerGapMask_1: -8833601786461011415
+      DevilerGapMask_10: 7863621497444544730
+      DevilerGapMask_11: -2186698149935313715
+      DevilerGapMask_12: -159213329848688515
+      DevilerGapMask_13: -689920820714025615
+      DevilerGapMask_14: -1155853525327615936
+      DevilerGapMask_15: 5562878388296570728
+      DevilerGapMask_16: 3180366480825925664
+      DevilerGapMask_17: 6848667364421987591
+      DevilerGapMask_18: -3915507626270307422
+      DevilerGapMask_19: 6184118452470814095
+      DevilerGapMask_2: 9041916783518078144
+      DevilerGapMask_20: 7512184936962837496
+      DevilerGapMask_21: -3395563700542817016
+      DevilerGapMask_22: 8493331318169547855
+      DevilerGapMask_23: 6554824433885906982
+      DevilerGapMask_24: 5906368240546483514
+      DevilerGapMask_25: -5605689970217397073
+      DevilerGapMask_26: 4400700478210028856
+      DevilerGapMask_27: -7189157493166445693
+      DevilerGapMask_28: 6121455709141645706
+      DevilerGapMask_29: -9073258027220534581
+      DevilerGapMask_3: 1317247360169951822
+      DevilerGapMask_30: -4268743051071262538
+      DevilerGapMask_31: -6264574231275960290
+      DevilerGapMask_32: -8245932401304883881
+      DevilerGapMask_33: -1102585393599140486
+      DevilerGapMask_34: 5304453021664878640
+      DevilerGapMask_35: 3381858151105280172
+      DevilerGapMask_36: -3190091152995446371
+      DevilerGapMask_37: 6902676958602751988
+      DevilerGapMask_38: -3761852876418755788
+      DevilerGapMask_39: -1067496834879999310
+      DevilerGapMask_4: 2998721013467451051
+      DevilerGapMask_40: -4797523547093747337
+      DevilerGapMask_41: -1144576027555337988
+      DevilerGapMask_42: 8083293315803400310
+      DevilerGapMask_43: 2718079427979966343
+      DevilerGapMask_44: 3264757415659061159
+      DevilerGapMask_45: 3700147240850438668
+      DevilerGapMask_46: 485799919537831775
+      DevilerGapMask_47: -4442762442137273635
+      DevilerGapMask_48: 8369350719489985139
+      DevilerGapMask_49: 7469568468623511797
+      DevilerGapMask_5: -4505530531505032698
+      DevilerGapMask_50: -62494364713785912
+      DevilerGapMask_51: -8912419871513690201
+      DevilerGapMask_52: -319352416650676110
+      DevilerGapMask_53: -7790003084025464323
+      DevilerGapMask_54: -1153654437785143785
+      DevilerGapMask_55: -5592990998833868356
+      DevilerGapMask_56: 4499216611413911660
+      DevilerGapMask_57: -5042925497219463490
+      DevilerGapMask_58: 8978945993709650393
+      DevilerGapMask_59: -8384664390544577570
+      DevilerGapMask_6: -7520095503588729333
+      DevilerGapMask_60: -253042301246613471
+      DevilerGapMask_61: -3944564448059326445
+      DevilerGapMask_62: 1032744812030839077
+      DevilerGapMask_63: -8307007831384743492
+      DevilerGapMask_7: 4767414807081364661
+      DevilerGapMask_8: -4722095100500486162
+      DevilerGapMask_9: -7793183413151658292
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

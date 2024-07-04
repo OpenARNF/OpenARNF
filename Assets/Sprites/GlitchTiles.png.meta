@@ -243,7 +243,7 @@ TextureImporter:
       213: 1141773587428647063
     second: GlitchTiles_79
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -260,9 +260,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -272,8 +275,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 0
     wrapV: 0
     wrapW: 0
@@ -294,9 +297,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -308,6 +317,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -320,6 +330,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -332,6 +343,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -2027,9 +2039,89 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      GlitchTiles_0: 886157738827709560
+      GlitchTiles_1: 4666014374433089311
+      GlitchTiles_10: -5963323002011517431
+      GlitchTiles_11: 5694794865303990833
+      GlitchTiles_12: -2931944504993844963
+      GlitchTiles_13: -7898520722910350934
+      GlitchTiles_14: -1702464334872240799
+      GlitchTiles_15: -3954001307428337238
+      GlitchTiles_16: 3627556874388229350
+      GlitchTiles_17: -4490063775864965600
+      GlitchTiles_18: 4280622997205371384
+      GlitchTiles_19: -6819260083797331244
+      GlitchTiles_2: 5045986117180425493
+      GlitchTiles_20: 5706758451501036635
+      GlitchTiles_21: -8977710193222652888
+      GlitchTiles_22: -8319410275681643287
+      GlitchTiles_23: 7738338799041076019
+      GlitchTiles_24: 8497698389992202658
+      GlitchTiles_25: 1814422332101195425
+      GlitchTiles_26: 1857981928802975078
+      GlitchTiles_27: 5039420539621465621
+      GlitchTiles_28: 462408761472145009
+      GlitchTiles_29: 1811418648775103107
+      GlitchTiles_3: -7870642455434470885
+      GlitchTiles_30: -6291976221687744940
+      GlitchTiles_31: 2381508660136732005
+      GlitchTiles_32: -7111572260217587916
+      GlitchTiles_33: -5977998905466386397
+      GlitchTiles_34: 9203161510368094237
+      GlitchTiles_35: 8109379165463351775
+      GlitchTiles_36: -6706827786513502306
+      GlitchTiles_37: -6285413433305210762
+      GlitchTiles_38: -8763210408029215632
+      GlitchTiles_39: -7770144693869401466
+      GlitchTiles_4: 4620674444745777740
+      GlitchTiles_40: 4791711981003053455
+      GlitchTiles_41: 6954005246779119513
+      GlitchTiles_42: -8113524537266683075
+      GlitchTiles_43: 8374639958528010583
+      GlitchTiles_44: -1700539640149260878
+      GlitchTiles_45: 5054468001323282111
+      GlitchTiles_46: 5834668948696547264
+      GlitchTiles_47: -4981155541113428805
+      GlitchTiles_48: -507852054722102486
+      GlitchTiles_49: -5404009853805201647
+      GlitchTiles_5: -2062973866873012952
+      GlitchTiles_50: -5521866847959408458
+      GlitchTiles_51: -4629978756864351795
+      GlitchTiles_52: -8502417729652799138
+      GlitchTiles_53: -8664997156410777896
+      GlitchTiles_54: 4648257169273744355
+      GlitchTiles_55: 5494930061698420725
+      GlitchTiles_56: 5415690948222860063
+      GlitchTiles_57: -5572068847421226347
+      GlitchTiles_58: 2061783082284294141
+      GlitchTiles_59: -7990765594499906477
+      GlitchTiles_6: -5110386738242185706
+      GlitchTiles_60: -2595229159146148228
+      GlitchTiles_61: -1768952250765444006
+      GlitchTiles_62: 1631839888194969895
+      GlitchTiles_63: -839927866066000241
+      GlitchTiles_64: -3768680810946580157
+      GlitchTiles_65: 2138364369825369140
+      GlitchTiles_66: 7311035479414265781
+      GlitchTiles_67: 5875318952178656894
+      GlitchTiles_68: -7055423391690515835
+      GlitchTiles_69: 1605551797556016289
+      GlitchTiles_7: -4765627893491569410
+      GlitchTiles_70: 2628011722323228649
+      GlitchTiles_71: -2859802360549545686
+      GlitchTiles_72: 4443523920910921963
+      GlitchTiles_73: 9032156045550654442
+      GlitchTiles_74: -2395958289372990997
+      GlitchTiles_75: -876781953274411562
+      GlitchTiles_76: -9072140377724429468
+      GlitchTiles_77: 904986956564226899
+      GlitchTiles_78: 177577013884350796
+      GlitchTiles_79: 1141773587428647063
+      GlitchTiles_8: -318720884668143479
+      GlitchTiles_9: 8122207256079343192
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

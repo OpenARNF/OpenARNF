@@ -255,7 +255,7 @@ TextureImporter:
       213: 21300166
     second: Orphiel_83
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -272,9 +272,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -284,8 +287,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -306,9 +309,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -320,6 +329,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -332,6 +342,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -344,6 +355,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -356,6 +368,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
@@ -2135,9 +2148,93 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      Orphiel_0: 21300000
+      Orphiel_1: 21300002
+      Orphiel_10: 21300020
+      Orphiel_11: 21300022
+      Orphiel_12: 21300024
+      Orphiel_13: 21300026
+      Orphiel_14: 21300028
+      Orphiel_15: 21300030
+      Orphiel_16: 21300032
+      Orphiel_17: 21300034
+      Orphiel_18: 21300036
+      Orphiel_19: 21300038
+      Orphiel_2: 21300004
+      Orphiel_20: 21300040
+      Orphiel_21: 21300042
+      Orphiel_22: 21300044
+      Orphiel_23: 21300046
+      Orphiel_24: 21300048
+      Orphiel_25: 21300050
+      Orphiel_26: 21300052
+      Orphiel_27: 21300054
+      Orphiel_28: 21300056
+      Orphiel_29: 21300058
+      Orphiel_3: 21300006
+      Orphiel_30: 21300060
+      Orphiel_31: 21300062
+      Orphiel_32: 21300064
+      Orphiel_33: 21300066
+      Orphiel_34: 21300068
+      Orphiel_35: 21300070
+      Orphiel_36: 21300072
+      Orphiel_37: 21300074
+      Orphiel_38: 21300076
+      Orphiel_39: 21300078
+      Orphiel_4: 21300008
+      Orphiel_40: 21300080
+      Orphiel_41: 21300082
+      Orphiel_42: 21300084
+      Orphiel_43: 21300086
+      Orphiel_44: 21300088
+      Orphiel_45: 21300090
+      Orphiel_46: 21300092
+      Orphiel_47: 21300094
+      Orphiel_48: 21300096
+      Orphiel_49: 21300098
+      Orphiel_5: 21300010
+      Orphiel_50: 21300100
+      Orphiel_51: 21300102
+      Orphiel_52: 21300104
+      Orphiel_53: 21300106
+      Orphiel_54: 21300108
+      Orphiel_55: 21300110
+      Orphiel_56: 21300112
+      Orphiel_57: 21300114
+      Orphiel_58: 21300116
+      Orphiel_59: 21300118
+      Orphiel_6: 21300012
+      Orphiel_60: 21300120
+      Orphiel_61: 21300122
+      Orphiel_62: 21300124
+      Orphiel_63: 21300126
+      Orphiel_64: 21300128
+      Orphiel_65: 21300130
+      Orphiel_66: 21300132
+      Orphiel_67: 21300134
+      Orphiel_68: 21300136
+      Orphiel_69: 21300138
+      Orphiel_7: 21300014
+      Orphiel_70: 21300140
+      Orphiel_71: 21300142
+      Orphiel_72: 21300144
+      Orphiel_73: 21300146
+      Orphiel_74: 21300148
+      Orphiel_75: 21300150
+      Orphiel_76: 21300152
+      Orphiel_77: 21300154
+      Orphiel_78: 21300156
+      Orphiel_79: 21300158
+      Orphiel_8: 21300016
+      Orphiel_80: 21300160
+      Orphiel_81: 21300162
+      Orphiel_82: 21300164
+      Orphiel_83: 21300166
+      Orphiel_9: 21300018
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

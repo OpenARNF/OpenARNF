@@ -75,7 +75,7 @@ TextureImporter:
       213: 21300046
     second: FactoryBossHeadTentacles_23
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -92,9 +92,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -105,7 +108,7 @@ TextureImporter:
     serializedVersion: 2
     filterMode: 0
     aniso: 16
-    mipBias: -100
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -126,9 +129,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -140,6 +149,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -152,6 +162,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -164,6 +175,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -176,6 +188,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
@@ -695,9 +708,33 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: factoryboss
+    nameFileIdTable:
+      FactoryBossHeadTentacles_0: 21300000
+      FactoryBossHeadTentacles_1: 21300002
+      FactoryBossHeadTentacles_10: 21300020
+      FactoryBossHeadTentacles_11: 21300022
+      FactoryBossHeadTentacles_12: 21300024
+      FactoryBossHeadTentacles_13: 21300026
+      FactoryBossHeadTentacles_14: 21300028
+      FactoryBossHeadTentacles_15: 21300030
+      FactoryBossHeadTentacles_16: 21300032
+      FactoryBossHeadTentacles_17: 21300034
+      FactoryBossHeadTentacles_18: 21300036
+      FactoryBossHeadTentacles_19: 21300038
+      FactoryBossHeadTentacles_2: 21300004
+      FactoryBossHeadTentacles_20: 21300040
+      FactoryBossHeadTentacles_21: 21300042
+      FactoryBossHeadTentacles_22: 21300044
+      FactoryBossHeadTentacles_23: 21300046
+      FactoryBossHeadTentacles_3: 21300006
+      FactoryBossHeadTentacles_4: 21300008
+      FactoryBossHeadTentacles_5: 21300010
+      FactoryBossHeadTentacles_6: 21300012
+      FactoryBossHeadTentacles_7: 21300014
+      FactoryBossHeadTentacles_8: 21300016
+      FactoryBossHeadTentacles_9: 21300018
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

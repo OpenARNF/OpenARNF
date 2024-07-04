@@ -255,7 +255,7 @@ TextureImporter:
       213: 21300166
     second: TeleporterBG_83
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -272,9 +272,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -284,8 +287,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -306,10 +309,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -321,6 +329,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -333,6 +342,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -345,6 +355,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -357,6 +368,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -369,6 +381,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
@@ -2148,9 +2161,93 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      TeleporterBG_0: 21300000
+      TeleporterBG_1: 21300002
+      TeleporterBG_10: 21300020
+      TeleporterBG_11: 21300022
+      TeleporterBG_12: 21300024
+      TeleporterBG_13: 21300026
+      TeleporterBG_14: 21300028
+      TeleporterBG_15: 21300030
+      TeleporterBG_16: 21300032
+      TeleporterBG_17: 21300034
+      TeleporterBG_18: 21300036
+      TeleporterBG_19: 21300038
+      TeleporterBG_2: 21300004
+      TeleporterBG_20: 21300040
+      TeleporterBG_21: 21300042
+      TeleporterBG_22: 21300044
+      TeleporterBG_23: 21300046
+      TeleporterBG_24: 21300048
+      TeleporterBG_25: 21300050
+      TeleporterBG_26: 21300052
+      TeleporterBG_27: 21300054
+      TeleporterBG_28: 21300056
+      TeleporterBG_29: 21300058
+      TeleporterBG_3: 21300006
+      TeleporterBG_30: 21300060
+      TeleporterBG_31: 21300062
+      TeleporterBG_32: 21300064
+      TeleporterBG_33: 21300066
+      TeleporterBG_34: 21300068
+      TeleporterBG_35: 21300070
+      TeleporterBG_36: 21300072
+      TeleporterBG_37: 21300074
+      TeleporterBG_38: 21300076
+      TeleporterBG_39: 21300078
+      TeleporterBG_4: 21300008
+      TeleporterBG_40: 21300080
+      TeleporterBG_41: 21300082
+      TeleporterBG_42: 21300084
+      TeleporterBG_43: 21300086
+      TeleporterBG_44: 21300088
+      TeleporterBG_45: 21300090
+      TeleporterBG_46: 21300092
+      TeleporterBG_47: 21300094
+      TeleporterBG_48: 21300096
+      TeleporterBG_49: 21300098
+      TeleporterBG_5: 21300010
+      TeleporterBG_50: 21300100
+      TeleporterBG_51: 21300102
+      TeleporterBG_52: 21300104
+      TeleporterBG_53: 21300106
+      TeleporterBG_54: 21300108
+      TeleporterBG_55: 21300110
+      TeleporterBG_56: 21300112
+      TeleporterBG_57: 21300114
+      TeleporterBG_58: 21300116
+      TeleporterBG_59: 21300118
+      TeleporterBG_6: 21300012
+      TeleporterBG_60: 21300120
+      TeleporterBG_61: 21300122
+      TeleporterBG_62: 21300124
+      TeleporterBG_63: 21300126
+      TeleporterBG_64: 21300128
+      TeleporterBG_65: 21300130
+      TeleporterBG_66: 21300132
+      TeleporterBG_67: 21300134
+      TeleporterBG_68: 21300136
+      TeleporterBG_69: 21300138
+      TeleporterBG_7: 21300014
+      TeleporterBG_70: 21300140
+      TeleporterBG_71: 21300142
+      TeleporterBG_72: 21300144
+      TeleporterBG_73: 21300146
+      TeleporterBG_74: 21300148
+      TeleporterBG_75: 21300150
+      TeleporterBG_76: 21300152
+      TeleporterBG_77: 21300154
+      TeleporterBG_78: 21300156
+      TeleporterBG_79: 21300158
+      TeleporterBG_8: 21300016
+      TeleporterBG_80: 21300160
+      TeleporterBG_81: 21300162
+      TeleporterBG_82: 21300164
+      TeleporterBG_83: 21300166
+      TeleporterBG_9: 21300018
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

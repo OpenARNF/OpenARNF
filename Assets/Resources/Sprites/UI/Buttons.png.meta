@@ -246,7 +246,7 @@ TextureImporter:
       213: 21300160
     second: SonyRightStickDown
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -263,9 +263,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -275,8 +278,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -297,9 +300,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -311,6 +320,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -323,6 +333,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -335,6 +346,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
@@ -2030,9 +2042,89 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      BlackA: 21300094
+      BlackB: 21300096
+      BlackX: 21300098
+      BlackY: 21300100
+      BlueXButton: 21300004
+      Circle: 21300066
+      Cross: 21300064
+      DPadXAxisNegative: 21300040
+      DPadXAxisPositive: 21300042
+      DPadYAxisNegative: 21300038
+      DPadYAxisPositive: 21300036
+      GreenAButton: 21300000
+      Key: 21300044
+      KeyDown: 21300050
+      KeyLarge: 21300046
+      KeyLeft: 21300052
+      KeyRight: 21300054
+      KeyUp: 21300048
+      KeyVeryLarge: 21300056
+      L: 21300088
+      L1: 21300072
+      L2: 21300076
+      LeftButton: 21300010
+      LeftStickXAxisNegative: 21300020
+      LeftStickXAxisPositive: 21300060
+      LeftStickYAxisNegative: 21300018
+      LeftStickYAxisPositive: 21300016
+      LeftTrigger: 21300034
+      Minus: 21300092
+      Options: 21300080
+      Plus: 21300090
+      R: 21300086
+      R1: 21300070
+      R2: 21300074
+      RedBButton: 21300002
+      RightButton: 21300008
+      RightStickXAxisNegative: 21300028
+      RightStickXAxisPositive: 21300030
+      RightStickYAxisNegative: 21300026
+      RightStickYAxisPositive: 21300024
+      RightTrigger: 21300032
+      Select: 21300012
+      Share: 21300078
+      SonyLeftStickDown: 21300158
+      SonyRightStickDown: 21300160
+      SonySelect: 21300154
+      SonyStart: 21300156
+      Square: 21300062
+      Start: 21300014
+      SwitchA: 21300102
+      SwitchB: 21300104
+      SwitchCapture: 21300148
+      SwitchDPadDown: 21300130
+      SwitchDPadLeft: 21300128
+      SwitchDPadRight: 21300132
+      SwitchDPadUp: 21300126
+      SwitchDown: 21300114
+      SwitchHome: 21300122
+      SwitchL: 21300134
+      SwitchLeft: 21300116
+      SwitchLeftStick: 21300118
+      SwitchLeftStickDown: 21300150
+      SwitchMinus: 21300124
+      SwitchPlus: 21300146
+      SwitchR: 21300136
+      SwitchRight: 21300112
+      SwitchRightStick: 21300120
+      SwitchRightStickDown: 21300152
+      SwitchSL: 21300138
+      SwitchSR: 21300140
+      SwitchUp: 21300110
+      SwitchX: 21300106
+      SwitchY: 21300108
+      SwitchZL: 21300142
+      SwitchZR: 21300144
+      Triangle: 21300068
+      Unknown: 21300058
+      YellowYButton: 21300006
+      ZL: 21300082
+      ZR: 21300084
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

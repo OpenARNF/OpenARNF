@@ -327,7 +327,7 @@ TextureImporter:
       213: 21300214
     second: Tyr_107
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -344,9 +344,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -356,8 +359,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -378,9 +381,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -392,6 +401,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -404,6 +414,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -416,6 +427,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -428,6 +440,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
@@ -2711,9 +2724,117 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      Tyr_0: 21300000
+      Tyr_1: 21300002
+      Tyr_10: 21300020
+      Tyr_100: 21300200
+      Tyr_101: 21300202
+      Tyr_102: 21300204
+      Tyr_103: 21300206
+      Tyr_104: 21300208
+      Tyr_105: 21300210
+      Tyr_106: 21300212
+      Tyr_107: 21300214
+      Tyr_11: 21300022
+      Tyr_12: 21300024
+      Tyr_13: 21300026
+      Tyr_14: 21300028
+      Tyr_15: 21300030
+      Tyr_16: 21300032
+      Tyr_17: 21300034
+      Tyr_18: 21300036
+      Tyr_19: 21300038
+      Tyr_2: 21300004
+      Tyr_20: 21300040
+      Tyr_21: 21300042
+      Tyr_22: 21300044
+      Tyr_23: 21300046
+      Tyr_24: 21300048
+      Tyr_25: 21300050
+      Tyr_26: 21300052
+      Tyr_27: 21300054
+      Tyr_28: 21300056
+      Tyr_29: 21300058
+      Tyr_3: 21300006
+      Tyr_30: 21300060
+      Tyr_31: 21300062
+      Tyr_32: 21300064
+      Tyr_33: 21300066
+      Tyr_34: 21300068
+      Tyr_35: 21300070
+      Tyr_36: 21300072
+      Tyr_37: 21300074
+      Tyr_38: 21300076
+      Tyr_39: 21300078
+      Tyr_4: 21300008
+      Tyr_40: 21300080
+      Tyr_41: 21300082
+      Tyr_42: 21300084
+      Tyr_43: 21300086
+      Tyr_44: 21300088
+      Tyr_45: 21300090
+      Tyr_46: 21300092
+      Tyr_47: 21300094
+      Tyr_48: 21300096
+      Tyr_49: 21300098
+      Tyr_5: 21300010
+      Tyr_50: 21300100
+      Tyr_51: 21300102
+      Tyr_52: 21300104
+      Tyr_53: 21300106
+      Tyr_54: 21300108
+      Tyr_55: 21300110
+      Tyr_56: 21300112
+      Tyr_57: 21300114
+      Tyr_58: 21300116
+      Tyr_59: 21300118
+      Tyr_6: 21300012
+      Tyr_60: 21300120
+      Tyr_61: 21300122
+      Tyr_62: 21300124
+      Tyr_63: 21300126
+      Tyr_64: 21300128
+      Tyr_65: 21300130
+      Tyr_66: 21300132
+      Tyr_67: 21300134
+      Tyr_68: 21300136
+      Tyr_69: 21300138
+      Tyr_7: 21300014
+      Tyr_70: 21300140
+      Tyr_71: 21300142
+      Tyr_72: 21300144
+      Tyr_73: 21300146
+      Tyr_74: 21300148
+      Tyr_75: 21300150
+      Tyr_76: 21300152
+      Tyr_77: 21300154
+      Tyr_78: 21300156
+      Tyr_79: 21300158
+      Tyr_8: 21300016
+      Tyr_80: 21300160
+      Tyr_81: 21300162
+      Tyr_82: 21300164
+      Tyr_83: 21300166
+      Tyr_84: 21300168
+      Tyr_85: 21300170
+      Tyr_86: 21300172
+      Tyr_87: 21300174
+      Tyr_88: 21300176
+      Tyr_89: 21300178
+      Tyr_9: 21300018
+      Tyr_90: 21300180
+      Tyr_91: 21300182
+      Tyr_92: 21300184
+      Tyr_93: 21300186
+      Tyr_94: 21300188
+      Tyr_95: 21300190
+      Tyr_96: 21300192
+      Tyr_97: 21300194
+      Tyr_98: 21300196
+      Tyr_99: 21300198
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

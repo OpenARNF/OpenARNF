@@ -237,7 +237,7 @@ TextureImporter:
       213: 21300154
     second: LeviathanBody_77
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -254,9 +254,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -266,8 +269,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -288,10 +291,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -303,6 +311,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -315,6 +324,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -327,6 +337,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -339,6 +350,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -351,6 +363,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
@@ -2004,9 +2017,87 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: Leviathan
+    nameFileIdTable:
+      LeviathanBody_0: 21300000
+      LeviathanBody_1: 21300002
+      LeviathanBody_10: 21300020
+      LeviathanBody_11: 21300022
+      LeviathanBody_12: 21300024
+      LeviathanBody_13: 21300026
+      LeviathanBody_14: 21300028
+      LeviathanBody_15: 21300030
+      LeviathanBody_16: 21300032
+      LeviathanBody_17: 21300034
+      LeviathanBody_18: 21300036
+      LeviathanBody_19: 21300038
+      LeviathanBody_2: 21300004
+      LeviathanBody_20: 21300040
+      LeviathanBody_21: 21300042
+      LeviathanBody_22: 21300044
+      LeviathanBody_23: 21300046
+      LeviathanBody_24: 21300048
+      LeviathanBody_25: 21300050
+      LeviathanBody_26: 21300052
+      LeviathanBody_27: 21300054
+      LeviathanBody_28: 21300056
+      LeviathanBody_29: 21300058
+      LeviathanBody_3: 21300006
+      LeviathanBody_30: 21300060
+      LeviathanBody_31: 21300062
+      LeviathanBody_32: 21300064
+      LeviathanBody_33: 21300066
+      LeviathanBody_34: 21300068
+      LeviathanBody_35: 21300070
+      LeviathanBody_36: 21300072
+      LeviathanBody_37: 21300074
+      LeviathanBody_38: 21300076
+      LeviathanBody_39: 21300078
+      LeviathanBody_4: 21300008
+      LeviathanBody_40: 21300080
+      LeviathanBody_41: 21300082
+      LeviathanBody_42: 21300084
+      LeviathanBody_43: 21300086
+      LeviathanBody_44: 21300088
+      LeviathanBody_45: 21300090
+      LeviathanBody_46: 21300092
+      LeviathanBody_47: 21300094
+      LeviathanBody_48: 21300096
+      LeviathanBody_49: 21300098
+      LeviathanBody_5: 21300010
+      LeviathanBody_50: 21300100
+      LeviathanBody_51: 21300102
+      LeviathanBody_52: 21300104
+      LeviathanBody_53: 21300106
+      LeviathanBody_54: 21300108
+      LeviathanBody_55: 21300110
+      LeviathanBody_56: 21300112
+      LeviathanBody_57: 21300114
+      LeviathanBody_58: 21300116
+      LeviathanBody_59: 21300118
+      LeviathanBody_6: 21300012
+      LeviathanBody_60: 21300120
+      LeviathanBody_61: 21300122
+      LeviathanBody_62: 21300124
+      LeviathanBody_63: 21300126
+      LeviathanBody_64: 21300128
+      LeviathanBody_65: 21300130
+      LeviathanBody_66: 21300132
+      LeviathanBody_67: 21300134
+      LeviathanBody_68: 21300136
+      LeviathanBody_69: 21300138
+      LeviathanBody_7: 21300014
+      LeviathanBody_70: 21300140
+      LeviathanBody_71: 21300142
+      LeviathanBody_72: 21300144
+      LeviathanBody_73: 21300146
+      LeviathanBody_74: 21300148
+      LeviathanBody_75: 21300150
+      LeviathanBody_76: 21300152
+      LeviathanBody_77: 21300154
+      LeviathanBody_8: 21300016
+      LeviathanBody_9: 21300018
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

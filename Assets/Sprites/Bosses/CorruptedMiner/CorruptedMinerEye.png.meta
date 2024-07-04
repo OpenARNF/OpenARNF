@@ -87,7 +87,7 @@ TextureImporter:
       213: -902148991200903261
     second: CorruptedMinerEye_27
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -104,9 +104,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -116,8 +119,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -138,9 +141,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -152,6 +161,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -164,6 +174,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -176,6 +187,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -779,9 +791,37 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      CorruptedMinerEye_0: -8019921653797572518
+      CorruptedMinerEye_1: -699304002381796301
+      CorruptedMinerEye_10: 1747620725438303579
+      CorruptedMinerEye_11: 6563869355875166618
+      CorruptedMinerEye_12: -8525326268999436949
+      CorruptedMinerEye_13: 6348900208775453985
+      CorruptedMinerEye_14: 3680197707764679293
+      CorruptedMinerEye_15: -7695836060293011412
+      CorruptedMinerEye_16: 2729839518447383801
+      CorruptedMinerEye_17: 8553526572490683392
+      CorruptedMinerEye_18: 3128104952394696460
+      CorruptedMinerEye_19: 7210408769675739451
+      CorruptedMinerEye_2: -1948344869511281822
+      CorruptedMinerEye_20: -8152879214635857005
+      CorruptedMinerEye_21: -7511459007811670740
+      CorruptedMinerEye_22: -3172733266547032176
+      CorruptedMinerEye_23: -1906166692402669451
+      CorruptedMinerEye_24: 8234636497924958968
+      CorruptedMinerEye_25: 4095901120213734140
+      CorruptedMinerEye_26: 2225201471366457349
+      CorruptedMinerEye_27: -902148991200903261
+      CorruptedMinerEye_3: 5380730894038876941
+      CorruptedMinerEye_4: -5337987710111877329
+      CorruptedMinerEye_5: 7635688656049488356
+      CorruptedMinerEye_6: 6820404225704407502
+      CorruptedMinerEye_7: 6796819038194746599
+      CorruptedMinerEye_8: -7298248995071946911
+      CorruptedMinerEye_9: -1743051128175195000
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

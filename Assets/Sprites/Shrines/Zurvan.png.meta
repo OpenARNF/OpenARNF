@@ -255,7 +255,7 @@ TextureImporter:
       213: 21300166
     second: Zurvan_83
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -272,9 +272,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -284,8 +287,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -306,9 +309,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -320,6 +329,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -332,6 +342,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -344,6 +355,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -356,6 +368,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
@@ -2135,9 +2148,93 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      Zurvan_0: 21300000
+      Zurvan_1: 21300002
+      Zurvan_10: 21300020
+      Zurvan_11: 21300022
+      Zurvan_12: 21300024
+      Zurvan_13: 21300026
+      Zurvan_14: 21300028
+      Zurvan_15: 21300030
+      Zurvan_16: 21300032
+      Zurvan_17: 21300034
+      Zurvan_18: 21300036
+      Zurvan_19: 21300038
+      Zurvan_2: 21300004
+      Zurvan_20: 21300040
+      Zurvan_21: 21300042
+      Zurvan_22: 21300044
+      Zurvan_23: 21300046
+      Zurvan_24: 21300048
+      Zurvan_25: 21300050
+      Zurvan_26: 21300052
+      Zurvan_27: 21300054
+      Zurvan_28: 21300056
+      Zurvan_29: 21300058
+      Zurvan_3: 21300006
+      Zurvan_30: 21300060
+      Zurvan_31: 21300062
+      Zurvan_32: 21300064
+      Zurvan_33: 21300066
+      Zurvan_34: 21300068
+      Zurvan_35: 21300070
+      Zurvan_36: 21300072
+      Zurvan_37: 21300074
+      Zurvan_38: 21300076
+      Zurvan_39: 21300078
+      Zurvan_4: 21300008
+      Zurvan_40: 21300080
+      Zurvan_41: 21300082
+      Zurvan_42: 21300084
+      Zurvan_43: 21300086
+      Zurvan_44: 21300088
+      Zurvan_45: 21300090
+      Zurvan_46: 21300092
+      Zurvan_47: 21300094
+      Zurvan_48: 21300096
+      Zurvan_49: 21300098
+      Zurvan_5: 21300010
+      Zurvan_50: 21300100
+      Zurvan_51: 21300102
+      Zurvan_52: 21300104
+      Zurvan_53: 21300106
+      Zurvan_54: 21300108
+      Zurvan_55: 21300110
+      Zurvan_56: 21300112
+      Zurvan_57: 21300114
+      Zurvan_58: 21300116
+      Zurvan_59: 21300118
+      Zurvan_6: 21300012
+      Zurvan_60: 21300120
+      Zurvan_61: 21300122
+      Zurvan_62: 21300124
+      Zurvan_63: 21300126
+      Zurvan_64: 21300128
+      Zurvan_65: 21300130
+      Zurvan_66: 21300132
+      Zurvan_67: 21300134
+      Zurvan_68: 21300136
+      Zurvan_69: 21300138
+      Zurvan_7: 21300014
+      Zurvan_70: 21300140
+      Zurvan_71: 21300142
+      Zurvan_72: 21300144
+      Zurvan_73: 21300146
+      Zurvan_74: 21300148
+      Zurvan_75: 21300150
+      Zurvan_76: 21300152
+      Zurvan_77: 21300154
+      Zurvan_78: 21300156
+      Zurvan_79: 21300158
+      Zurvan_8: 21300016
+      Zurvan_80: 21300160
+      Zurvan_81: 21300162
+      Zurvan_82: 21300164
+      Zurvan_83: 21300166
+      Zurvan_9: 21300018
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

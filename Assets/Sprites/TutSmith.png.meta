@@ -564,7 +564,7 @@ TextureImporter:
       213: 335323988178519223
     second: TutSmith_186
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -581,9 +581,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -593,8 +596,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -615,9 +618,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -629,6 +638,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -641,6 +651,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -653,6 +664,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -4595,9 +4607,196 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      TutSmith_0: 1433413242451107501
+      TutSmith_1: -984217390561474710
+      TutSmith_10: 3201998061817254330
+      TutSmith_100: -6493462604463189727
+      TutSmith_101: 3951075534373860373
+      TutSmith_102: 7723722441667627240
+      TutSmith_103: 5437658086418741859
+      TutSmith_104: 2451315346232170136
+      TutSmith_105: 304972753402520987
+      TutSmith_106: -3483236229344356581
+      TutSmith_107: 7780033217399802262
+      TutSmith_108: 2378558025741657949
+      TutSmith_109: -6746925410136887527
+      TutSmith_11: -3173975356400827802
+      TutSmith_110: 3162624897159094911
+      TutSmith_111: 5414174443729554448
+      TutSmith_112: -6505190006897518781
+      TutSmith_113: -5271176544440534640
+      TutSmith_114: 8680591747404253724
+      TutSmith_115: -5267731126435976198
+      TutSmith_116: 201421414476590407
+      TutSmith_117: -3420919934101561212
+      TutSmith_118: -3971818903209185294
+      TutSmith_119: 776591638528527239
+      TutSmith_12: -7489772527037842179
+      TutSmith_120: -3958746345133484267
+      TutSmith_121: -3564553815236704339
+      TutSmith_122: 4599810848611931394
+      TutSmith_123: 2887129107813258025
+      TutSmith_124: 6121120728026334839
+      TutSmith_125: -583059234000362795
+      TutSmith_126: -2494510796140135840
+      TutSmith_127: 5513889465263515495
+      TutSmith_128: -7290271375782848276
+      TutSmith_129: -3564162877235586076
+      TutSmith_13: 7013516461515099877
+      TutSmith_130: -218874385344956974
+      TutSmith_131: 8165675454361302050
+      TutSmith_132: 8606188855156057345
+      TutSmith_133: -9054782997293336518
+      TutSmith_134: -7114827851725988758
+      TutSmith_135: 3067445722786918121
+      TutSmith_136: 5574622360426751329
+      TutSmith_137: -9212958787089564416
+      TutSmith_138: 5516172233652642793
+      TutSmith_139: 4377063379461192916
+      TutSmith_14: 5535235591367069093
+      TutSmith_140: 1095879881046866940
+      TutSmith_141: -6513766187457170788
+      TutSmith_142: 6532568367009913785
+      TutSmith_143: 3154473057326342372
+      TutSmith_144: -2305792145028578815
+      TutSmith_145: 55756349425203196
+      TutSmith_146: -3394095591914241046
+      TutSmith_147: -170275259043716242
+      TutSmith_148: -3374638330567464358
+      TutSmith_149: 3087939995963180419
+      TutSmith_15: 6674968589735849609
+      TutSmith_150: 2538302106951870217
+      TutSmith_151: 5929626562163532462
+      TutSmith_152: -6667180886258523000
+      TutSmith_153: 8825841707006111156
+      TutSmith_154: -2625131163998077244
+      TutSmith_155: -5235390353651823665
+      TutSmith_156: 8974920003402632971
+      TutSmith_157: 2901943033483974558
+      TutSmith_158: 3003834732211887925
+      TutSmith_159: 2248105844550373414
+      TutSmith_16: 5160755522638170490
+      TutSmith_160: 4301124554528753818
+      TutSmith_161: 3060696239965562082
+      TutSmith_162: -813850161438926229
+      TutSmith_163: -1597886239326152722
+      TutSmith_164: 7173321292670963327
+      TutSmith_165: -8030578340043766919
+      TutSmith_166: 2129686969455619329
+      TutSmith_167: 1924171333472776263
+      TutSmith_168: 8559492550751436149
+      TutSmith_169: 8704318687956440816
+      TutSmith_17: -5253612700174679706
+      TutSmith_170: -3536284692953122105
+      TutSmith_171: -2703481851584136661
+      TutSmith_172: -8025611576158125645
+      TutSmith_173: -5828454581254655793
+      TutSmith_174: -4610651552722795804
+      TutSmith_175: -7193032615045572591
+      TutSmith_176: 953859958612134128
+      TutSmith_177: -1917715428625710786
+      TutSmith_178: 6897871225091364732
+      TutSmith_179: -6249931436445656143
+      TutSmith_18: 7736780063444505490
+      TutSmith_180: 5087519365411577375
+      TutSmith_181: -5725638085749531913
+      TutSmith_182: -1136819964488476235
+      TutSmith_183: 8661672513012483904
+      TutSmith_184: -8630760361085784854
+      TutSmith_185: 7545473908484971406
+      TutSmith_186: 335323988178519223
+      TutSmith_19: 4783988838958704584
+      TutSmith_2: 8828850767030826996
+      TutSmith_20: 2325432377449939203
+      TutSmith_21: -3771275126938532916
+      TutSmith_22: 7996104738159448431
+      TutSmith_23: 1633950499695905020
+      TutSmith_24: -1443184672565160610
+      TutSmith_25: -7034682957733212853
+      TutSmith_26: -4159175729828525932
+      TutSmith_27: 1133468958731081661
+      TutSmith_28: -9141277715048003817
+      TutSmith_29: 6365864834130261169
+      TutSmith_3: 4879127022036369730
+      TutSmith_30: -2876600802870842309
+      TutSmith_31: -4882954056292788301
+      TutSmith_32: 1902104658464140502
+      TutSmith_33: -3969673967449155946
+      TutSmith_34: -2589577565070706471
+      TutSmith_35: 6958620152076791866
+      TutSmith_36: 5737544480780582101
+      TutSmith_37: 5098505303671706822
+      TutSmith_38: 5792915329795889892
+      TutSmith_39: 6775681681471470232
+      TutSmith_4: 2696838323682360170
+      TutSmith_40: -5276895518512001538
+      TutSmith_41: -4875036400887160511
+      TutSmith_42: -8581524324355824510
+      TutSmith_43: -7445858149452108608
+      TutSmith_44: 6945152401117737625
+      TutSmith_45: -3498180834982013916
+      TutSmith_46: -654381455838616353
+      TutSmith_47: 804688249178482546
+      TutSmith_48: 7933237074089346776
+      TutSmith_49: 2619928860044237142
+      TutSmith_5: -5784236783751584799
+      TutSmith_50: 7047131284321504468
+      TutSmith_51: -4363220152286388378
+      TutSmith_52: -6040476086805911192
+      TutSmith_53: -100465560278806697
+      TutSmith_54: -4391814594175297531
+      TutSmith_55: -5918737318402305169
+      TutSmith_56: -7158178349149222914
+      TutSmith_57: 7373883850755599881
+      TutSmith_58: 784533137941599956
+      TutSmith_59: 3533027227272649192
+      TutSmith_6: 615299084102336020
+      TutSmith_60: -1969074523309687624
+      TutSmith_61: -7265681913513672567
+      TutSmith_62: -3703423416794151861
+      TutSmith_63: 7982878815220495901
+      TutSmith_64: -1953338963350015646
+      TutSmith_65: -3355662474497806937
+      TutSmith_66: 2911198920662743860
+      TutSmith_67: -4477615889737138844
+      TutSmith_68: 1858869422464748450
+      TutSmith_69: -3143848781541449086
+      TutSmith_7: -4739597610821696416
+      TutSmith_70: 2379207799321488322
+      TutSmith_71: -143357285918740727
+      TutSmith_72: 4648799168695728381
+      TutSmith_73: -3441716013654062547
+      TutSmith_74: -1757671762792748647
+      TutSmith_75: 6275518083286431308
+      TutSmith_76: 2211070960594536969
+      TutSmith_77: 2064413250817739816
+      TutSmith_78: 122524973718458775
+      TutSmith_79: -3934681442396725325
+      TutSmith_8: 8840050992447868353
+      TutSmith_80: 6226043620404918502
+      TutSmith_81: -5882921649096931300
+      TutSmith_82: 8481530680870416216
+      TutSmith_83: -7171359620026569498
+      TutSmith_84: -5667552884632482609
+      TutSmith_85: -4908695330277823546
+      TutSmith_86: 6045412731801711413
+      TutSmith_87: 2729197461549466255
+      TutSmith_88: 5254860103273626521
+      TutSmith_89: 2762817823649404279
+      TutSmith_9: -3195973376341209123
+      TutSmith_90: -8674292036072013143
+      TutSmith_91: -5823129947668678556
+      TutSmith_92: 414331149514540152
+      TutSmith_93: -4190426964136662733
+      TutSmith_94: 6625170778447571494
+      TutSmith_95: -1582969110755542767
+      TutSmith_96: -5937146528789175572
+      TutSmith_97: 7291514263869257445
+      TutSmith_98: 6386151764292082815
+      TutSmith_99: -5961464121443460391
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

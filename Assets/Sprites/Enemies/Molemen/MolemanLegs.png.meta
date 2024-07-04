@@ -108,7 +108,7 @@ TextureImporter:
       213: 21300068
     second: MolemanLegs_34
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -125,9 +125,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -137,8 +140,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -159,10 +162,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -174,6 +182,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -186,6 +195,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -198,6 +208,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -210,6 +221,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -222,6 +234,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
@@ -972,9 +985,44 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: forestslums
+    nameFileIdTable:
+      MolemanLegs_0: 21300000
+      MolemanLegs_1: 21300002
+      MolemanLegs_10: 21300020
+      MolemanLegs_11: 21300022
+      MolemanLegs_12: 21300024
+      MolemanLegs_13: 21300026
+      MolemanLegs_14: 21300028
+      MolemanLegs_15: 21300030
+      MolemanLegs_16: 21300032
+      MolemanLegs_17: 21300034
+      MolemanLegs_18: 21300036
+      MolemanLegs_19: 21300038
+      MolemanLegs_2: 21300004
+      MolemanLegs_20: 21300040
+      MolemanLegs_21: 21300042
+      MolemanLegs_22: 21300044
+      MolemanLegs_23: 21300046
+      MolemanLegs_24: 21300048
+      MolemanLegs_25: 21300050
+      MolemanLegs_26: 21300052
+      MolemanLegs_27: 21300054
+      MolemanLegs_28: 21300056
+      MolemanLegs_29: 21300058
+      MolemanLegs_3: 21300006
+      MolemanLegs_30: 21300060
+      MolemanLegs_31: 21300062
+      MolemanLegs_32: 21300064
+      MolemanLegs_33: 21300066
+      MolemanLegs_34: 21300068
+      MolemanLegs_4: 21300008
+      MolemanLegs_5: 21300010
+      MolemanLegs_6: 21300012
+      MolemanLegs_7: 21300014
+      MolemanLegs_8: 21300016
+      MolemanLegs_9: 21300018
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

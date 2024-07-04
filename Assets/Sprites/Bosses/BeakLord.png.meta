@@ -219,7 +219,7 @@ TextureImporter:
       213: 21300142
     second: BeakLord_71
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -236,9 +236,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -248,8 +251,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -270,9 +273,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -284,6 +293,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -296,6 +306,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -308,6 +319,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
@@ -1835,9 +1847,81 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      BeakLord_0: 21300000
+      BeakLord_1: 21300002
+      BeakLord_10: 21300020
+      BeakLord_11: 21300022
+      BeakLord_12: 21300024
+      BeakLord_13: 21300026
+      BeakLord_14: 21300028
+      BeakLord_15: 21300030
+      BeakLord_16: 21300032
+      BeakLord_17: 21300034
+      BeakLord_18: 21300036
+      BeakLord_19: 21300038
+      BeakLord_2: 21300004
+      BeakLord_20: 21300040
+      BeakLord_21: 21300042
+      BeakLord_22: 21300044
+      BeakLord_23: 21300046
+      BeakLord_24: 21300048
+      BeakLord_25: 21300050
+      BeakLord_26: 21300052
+      BeakLord_27: 21300054
+      BeakLord_28: 21300056
+      BeakLord_29: 21300058
+      BeakLord_3: 21300006
+      BeakLord_30: 21300060
+      BeakLord_31: 21300062
+      BeakLord_32: 21300064
+      BeakLord_33: 21300066
+      BeakLord_34: 21300068
+      BeakLord_35: 21300070
+      BeakLord_36: 21300072
+      BeakLord_37: 21300074
+      BeakLord_38: 21300076
+      BeakLord_39: 21300078
+      BeakLord_4: 21300008
+      BeakLord_40: 21300080
+      BeakLord_41: 21300082
+      BeakLord_42: 21300084
+      BeakLord_43: 21300086
+      BeakLord_44: 21300088
+      BeakLord_45: 21300090
+      BeakLord_46: 21300092
+      BeakLord_47: 21300094
+      BeakLord_48: 21300096
+      BeakLord_49: 21300098
+      BeakLord_5: 21300010
+      BeakLord_50: 21300100
+      BeakLord_51: 21300102
+      BeakLord_52: 21300104
+      BeakLord_53: 21300106
+      BeakLord_54: 21300108
+      BeakLord_55: 21300110
+      BeakLord_56: 21300112
+      BeakLord_57: 21300114
+      BeakLord_58: 21300116
+      BeakLord_59: 21300118
+      BeakLord_6: 21300012
+      BeakLord_60: 21300120
+      BeakLord_61: 21300122
+      BeakLord_62: 21300124
+      BeakLord_63: 21300126
+      BeakLord_64: 21300128
+      BeakLord_65: 21300130
+      BeakLord_66: 21300132
+      BeakLord_67: 21300134
+      BeakLord_68: 21300136
+      BeakLord_69: 21300138
+      BeakLord_7: 21300014
+      BeakLord_70: 21300140
+      BeakLord_71: 21300142
+      BeakLord_8: 21300016
+      BeakLord_9: 21300018
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

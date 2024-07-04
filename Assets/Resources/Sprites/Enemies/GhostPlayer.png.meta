@@ -531,7 +531,7 @@ TextureImporter:
       213: 21300350
     second: GhostPlayer_175
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -548,9 +548,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -560,8 +563,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -582,9 +585,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -596,6 +605,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -608,6 +618,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -620,6 +631,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -632,6 +644,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
@@ -4343,9 +4356,185 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      GhostPlayer_0: 21300000
+      GhostPlayer_1: 21300002
+      GhostPlayer_10: 21300020
+      GhostPlayer_100: 21300200
+      GhostPlayer_101: 21300202
+      GhostPlayer_102: 21300204
+      GhostPlayer_103: 21300206
+      GhostPlayer_104: 21300208
+      GhostPlayer_105: 21300210
+      GhostPlayer_106: 21300212
+      GhostPlayer_107: 21300214
+      GhostPlayer_108: 21300216
+      GhostPlayer_109: 21300218
+      GhostPlayer_11: 21300022
+      GhostPlayer_110: 21300220
+      GhostPlayer_111: 21300222
+      GhostPlayer_112: 21300224
+      GhostPlayer_113: 21300226
+      GhostPlayer_114: 21300228
+      GhostPlayer_115: 21300230
+      GhostPlayer_116: 21300232
+      GhostPlayer_117: 21300234
+      GhostPlayer_118: 21300236
+      GhostPlayer_119: 21300238
+      GhostPlayer_12: 21300024
+      GhostPlayer_120: 21300240
+      GhostPlayer_121: 21300242
+      GhostPlayer_122: 21300244
+      GhostPlayer_123: 21300246
+      GhostPlayer_124: 21300248
+      GhostPlayer_125: 21300250
+      GhostPlayer_126: 21300252
+      GhostPlayer_127: 21300254
+      GhostPlayer_128: 21300256
+      GhostPlayer_129: 21300258
+      GhostPlayer_13: 21300026
+      GhostPlayer_130: 21300260
+      GhostPlayer_131: 21300262
+      GhostPlayer_132: 21300264
+      GhostPlayer_133: 21300266
+      GhostPlayer_134: 21300268
+      GhostPlayer_135: 21300270
+      GhostPlayer_136: 21300272
+      GhostPlayer_137: 21300274
+      GhostPlayer_138: 21300276
+      GhostPlayer_139: 21300278
+      GhostPlayer_14: 21300028
+      GhostPlayer_140: 21300280
+      GhostPlayer_141: 21300282
+      GhostPlayer_142: 21300284
+      GhostPlayer_143: 21300286
+      GhostPlayer_144: 21300288
+      GhostPlayer_145: 21300290
+      GhostPlayer_146: 21300292
+      GhostPlayer_147: 21300294
+      GhostPlayer_148: 21300296
+      GhostPlayer_149: 21300298
+      GhostPlayer_15: 21300030
+      GhostPlayer_150: 21300300
+      GhostPlayer_151: 21300302
+      GhostPlayer_152: 21300304
+      GhostPlayer_153: 21300306
+      GhostPlayer_154: 21300308
+      GhostPlayer_155: 21300310
+      GhostPlayer_156: 21300312
+      GhostPlayer_157: 21300314
+      GhostPlayer_158: 21300316
+      GhostPlayer_159: 21300318
+      GhostPlayer_16: 21300032
+      GhostPlayer_160: 21300320
+      GhostPlayer_161: 21300322
+      GhostPlayer_162: 21300324
+      GhostPlayer_163: 21300326
+      GhostPlayer_164: 21300328
+      GhostPlayer_165: 21300330
+      GhostPlayer_166: 21300332
+      GhostPlayer_167: 21300334
+      GhostPlayer_168: 21300336
+      GhostPlayer_169: 21300338
+      GhostPlayer_17: 21300034
+      GhostPlayer_170: 21300340
+      GhostPlayer_171: 21300342
+      GhostPlayer_172: 21300344
+      GhostPlayer_173: 21300346
+      GhostPlayer_174: 21300348
+      GhostPlayer_175: 21300350
+      GhostPlayer_18: 21300036
+      GhostPlayer_19: 21300038
+      GhostPlayer_2: 21300004
+      GhostPlayer_20: 21300040
+      GhostPlayer_21: 21300042
+      GhostPlayer_22: 21300044
+      GhostPlayer_23: 21300046
+      GhostPlayer_24: 21300048
+      GhostPlayer_25: 21300050
+      GhostPlayer_26: 21300052
+      GhostPlayer_27: 21300054
+      GhostPlayer_28: 21300056
+      GhostPlayer_29: 21300058
+      GhostPlayer_3: 21300006
+      GhostPlayer_30: 21300060
+      GhostPlayer_31: 21300062
+      GhostPlayer_32: 21300064
+      GhostPlayer_33: 21300066
+      GhostPlayer_34: 21300068
+      GhostPlayer_35: 21300070
+      GhostPlayer_36: 21300072
+      GhostPlayer_37: 21300074
+      GhostPlayer_38: 21300076
+      GhostPlayer_39: 21300078
+      GhostPlayer_4: 21300008
+      GhostPlayer_40: 21300080
+      GhostPlayer_41: 21300082
+      GhostPlayer_42: 21300084
+      GhostPlayer_43: 21300086
+      GhostPlayer_44: 21300088
+      GhostPlayer_45: 21300090
+      GhostPlayer_46: 21300092
+      GhostPlayer_47: 21300094
+      GhostPlayer_48: 21300096
+      GhostPlayer_49: 21300098
+      GhostPlayer_5: 21300010
+      GhostPlayer_50: 21300100
+      GhostPlayer_51: 21300102
+      GhostPlayer_52: 21300104
+      GhostPlayer_53: 21300106
+      GhostPlayer_54: 21300108
+      GhostPlayer_55: 21300110
+      GhostPlayer_56: 21300112
+      GhostPlayer_57: 21300114
+      GhostPlayer_58: 21300116
+      GhostPlayer_59: 21300118
+      GhostPlayer_6: 21300012
+      GhostPlayer_60: 21300120
+      GhostPlayer_61: 21300122
+      GhostPlayer_62: 21300124
+      GhostPlayer_63: 21300126
+      GhostPlayer_64: 21300128
+      GhostPlayer_65: 21300130
+      GhostPlayer_66: 21300132
+      GhostPlayer_67: 21300134
+      GhostPlayer_68: 21300136
+      GhostPlayer_69: 21300138
+      GhostPlayer_7: 21300014
+      GhostPlayer_70: 21300140
+      GhostPlayer_71: 21300142
+      GhostPlayer_72: 21300144
+      GhostPlayer_73: 21300146
+      GhostPlayer_74: 21300148
+      GhostPlayer_75: 21300150
+      GhostPlayer_76: 21300152
+      GhostPlayer_77: 21300154
+      GhostPlayer_78: 21300156
+      GhostPlayer_79: 21300158
+      GhostPlayer_8: 21300016
+      GhostPlayer_80: 21300160
+      GhostPlayer_81: 21300162
+      GhostPlayer_82: 21300164
+      GhostPlayer_83: 21300166
+      GhostPlayer_84: 21300168
+      GhostPlayer_85: 21300170
+      GhostPlayer_86: 21300172
+      GhostPlayer_87: 21300174
+      GhostPlayer_88: 21300176
+      GhostPlayer_89: 21300178
+      GhostPlayer_9: 21300018
+      GhostPlayer_90: 21300180
+      GhostPlayer_91: 21300182
+      GhostPlayer_92: 21300184
+      GhostPlayer_93: 21300186
+      GhostPlayer_94: 21300188
+      GhostPlayer_95: 21300190
+      GhostPlayer_96: 21300192
+      GhostPlayer_97: 21300194
+      GhostPlayer_98: 21300196
+      GhostPlayer_99: 21300198
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

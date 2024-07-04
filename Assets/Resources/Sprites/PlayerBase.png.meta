@@ -603,7 +603,7 @@ TextureImporter:
       213: 21300398
     second: PlayerBase_199
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -620,9 +620,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -633,7 +636,7 @@ TextureImporter:
     serializedVersion: 2
     filterMode: 0
     aniso: 16
-    mipBias: -100
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -654,9 +657,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -668,6 +677,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -680,6 +690,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -692,6 +703,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -704,6 +716,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
@@ -4919,9 +4932,209 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      PlayerBase_0: 21300000
+      PlayerBase_1: 21300002
+      PlayerBase_10: 21300020
+      PlayerBase_100: 21300200
+      PlayerBase_101: 21300202
+      PlayerBase_102: 21300204
+      PlayerBase_103: 21300206
+      PlayerBase_104: 21300208
+      PlayerBase_105: 21300210
+      PlayerBase_106: 21300212
+      PlayerBase_107: 21300214
+      PlayerBase_108: 21300216
+      PlayerBase_109: 21300218
+      PlayerBase_11: 21300022
+      PlayerBase_110: 21300220
+      PlayerBase_111: 21300222
+      PlayerBase_112: 21300224
+      PlayerBase_113: 21300226
+      PlayerBase_114: 21300228
+      PlayerBase_115: 21300230
+      PlayerBase_116: 21300232
+      PlayerBase_117: 21300234
+      PlayerBase_118: 21300236
+      PlayerBase_119: 21300238
+      PlayerBase_12: 21300024
+      PlayerBase_120: 21300240
+      PlayerBase_121: 21300242
+      PlayerBase_122: 21300244
+      PlayerBase_123: 21300246
+      PlayerBase_124: 21300248
+      PlayerBase_125: 21300250
+      PlayerBase_126: 21300252
+      PlayerBase_127: 21300254
+      PlayerBase_128: 21300256
+      PlayerBase_129: 21300258
+      PlayerBase_13: 21300026
+      PlayerBase_130: 21300260
+      PlayerBase_131: 21300262
+      PlayerBase_132: 21300264
+      PlayerBase_133: 21300266
+      PlayerBase_134: 21300268
+      PlayerBase_135: 21300270
+      PlayerBase_136: 21300272
+      PlayerBase_137: 21300274
+      PlayerBase_138: 21300276
+      PlayerBase_139: 21300278
+      PlayerBase_14: 21300028
+      PlayerBase_140: 21300280
+      PlayerBase_141: 21300282
+      PlayerBase_142: 21300284
+      PlayerBase_143: 21300286
+      PlayerBase_144: 21300288
+      PlayerBase_145: 21300290
+      PlayerBase_146: 21300292
+      PlayerBase_147: 21300294
+      PlayerBase_148: 21300296
+      PlayerBase_149: 21300298
+      PlayerBase_15: 21300030
+      PlayerBase_150: 21300300
+      PlayerBase_151: 21300302
+      PlayerBase_152: 21300304
+      PlayerBase_153: 21300306
+      PlayerBase_154: 21300308
+      PlayerBase_155: 21300310
+      PlayerBase_156: 21300312
+      PlayerBase_157: 21300314
+      PlayerBase_158: 21300316
+      PlayerBase_159: 21300318
+      PlayerBase_16: 21300032
+      PlayerBase_160: 21300320
+      PlayerBase_161: 21300322
+      PlayerBase_162: 21300324
+      PlayerBase_163: 21300326
+      PlayerBase_164: 21300328
+      PlayerBase_165: 21300330
+      PlayerBase_166: 21300332
+      PlayerBase_167: 21300334
+      PlayerBase_168: 21300336
+      PlayerBase_169: 21300338
+      PlayerBase_17: 21300034
+      PlayerBase_170: 21300340
+      PlayerBase_171: 21300342
+      PlayerBase_172: 21300344
+      PlayerBase_173: 21300346
+      PlayerBase_174: 21300348
+      PlayerBase_175: 21300350
+      PlayerBase_176: 21300352
+      PlayerBase_177: 21300354
+      PlayerBase_178: 21300356
+      PlayerBase_179: 21300358
+      PlayerBase_18: 21300036
+      PlayerBase_180: 21300360
+      PlayerBase_181: 21300362
+      PlayerBase_182: 21300364
+      PlayerBase_183: 21300366
+      PlayerBase_184: 21300368
+      PlayerBase_185: 21300370
+      PlayerBase_186: 21300372
+      PlayerBase_187: 21300374
+      PlayerBase_188: 21300376
+      PlayerBase_189: 21300378
+      PlayerBase_19: 21300038
+      PlayerBase_190: 21300380
+      PlayerBase_191: 21300382
+      PlayerBase_192: 21300384
+      PlayerBase_193: 21300386
+      PlayerBase_194: 21300388
+      PlayerBase_195: 21300390
+      PlayerBase_196: 21300392
+      PlayerBase_197: 21300394
+      PlayerBase_198: 21300396
+      PlayerBase_199: 21300398
+      PlayerBase_2: 21300004
+      PlayerBase_20: 21300040
+      PlayerBase_21: 21300042
+      PlayerBase_22: 21300044
+      PlayerBase_23: 21300046
+      PlayerBase_24: 21300048
+      PlayerBase_25: 21300050
+      PlayerBase_26: 21300052
+      PlayerBase_27: 21300054
+      PlayerBase_28: 21300056
+      PlayerBase_29: 21300058
+      PlayerBase_3: 21300006
+      PlayerBase_30: 21300060
+      PlayerBase_31: 21300062
+      PlayerBase_32: 21300064
+      PlayerBase_33: 21300066
+      PlayerBase_34: 21300068
+      PlayerBase_35: 21300070
+      PlayerBase_36: 21300072
+      PlayerBase_37: 21300074
+      PlayerBase_38: 21300076
+      PlayerBase_39: 21300078
+      PlayerBase_4: 21300008
+      PlayerBase_40: 21300080
+      PlayerBase_41: 21300082
+      PlayerBase_42: 21300084
+      PlayerBase_43: 21300086
+      PlayerBase_44: 21300088
+      PlayerBase_45: 21300090
+      PlayerBase_46: 21300092
+      PlayerBase_47: 21300094
+      PlayerBase_48: 21300096
+      PlayerBase_49: 21300098
+      PlayerBase_5: 21300010
+      PlayerBase_50: 21300100
+      PlayerBase_51: 21300102
+      PlayerBase_52: 21300104
+      PlayerBase_53: 21300106
+      PlayerBase_54: 21300108
+      PlayerBase_55: 21300110
+      PlayerBase_56: 21300112
+      PlayerBase_57: 21300114
+      PlayerBase_58: 21300116
+      PlayerBase_59: 21300118
+      PlayerBase_6: 21300012
+      PlayerBase_60: 21300120
+      PlayerBase_61: 21300122
+      PlayerBase_62: 21300124
+      PlayerBase_63: 21300126
+      PlayerBase_64: 21300128
+      PlayerBase_65: 21300130
+      PlayerBase_66: 21300132
+      PlayerBase_67: 21300134
+      PlayerBase_68: 21300136
+      PlayerBase_69: 21300138
+      PlayerBase_7: 21300014
+      PlayerBase_70: 21300140
+      PlayerBase_71: 21300142
+      PlayerBase_72: 21300144
+      PlayerBase_73: 21300146
+      PlayerBase_74: 21300148
+      PlayerBase_75: 21300150
+      PlayerBase_76: 21300152
+      PlayerBase_77: 21300154
+      PlayerBase_78: 21300156
+      PlayerBase_79: 21300158
+      PlayerBase_8: 21300016
+      PlayerBase_80: 21300160
+      PlayerBase_81: 21300162
+      PlayerBase_82: 21300164
+      PlayerBase_83: 21300166
+      PlayerBase_84: 21300168
+      PlayerBase_85: 21300170
+      PlayerBase_86: 21300172
+      PlayerBase_87: 21300174
+      PlayerBase_88: 21300176
+      PlayerBase_89: 21300178
+      PlayerBase_9: 21300018
+      PlayerBase_90: 21300180
+      PlayerBase_91: 21300182
+      PlayerBase_92: 21300184
+      PlayerBase_93: 21300186
+      PlayerBase_94: 21300188
+      PlayerBase_95: 21300190
+      PlayerBase_96: 21300192
+      PlayerBase_97: 21300194
+      PlayerBase_98: 21300196
+      PlayerBase_99: 21300198
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

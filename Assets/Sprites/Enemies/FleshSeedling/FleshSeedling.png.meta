@@ -129,7 +129,7 @@ TextureImporter:
       213: 21300082
     second: DropSpitter_41
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -146,9 +146,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -158,8 +161,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -180,9 +183,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -194,6 +203,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -206,6 +216,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -218,6 +229,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -230,6 +242,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -242,6 +255,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
@@ -1139,9 +1153,51 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: coolant
+    nameFileIdTable:
+      DropSpitter_0: 21300000
+      DropSpitter_1: 21300002
+      DropSpitter_10: 21300020
+      DropSpitter_11: 21300022
+      DropSpitter_12: 21300024
+      DropSpitter_13: 21300026
+      DropSpitter_14: 21300028
+      DropSpitter_15: 21300030
+      DropSpitter_16: 21300032
+      DropSpitter_17: 21300034
+      DropSpitter_18: 21300036
+      DropSpitter_19: 21300038
+      DropSpitter_2: 21300004
+      DropSpitter_20: 21300040
+      DropSpitter_21: 21300042
+      DropSpitter_22: 21300044
+      DropSpitter_23: 21300046
+      DropSpitter_24: 21300048
+      DropSpitter_25: 21300050
+      DropSpitter_26: 21300052
+      DropSpitter_27: 21300054
+      DropSpitter_28: 21300056
+      DropSpitter_29: 21300058
+      DropSpitter_3: 21300006
+      DropSpitter_30: 21300060
+      DropSpitter_31: 21300062
+      DropSpitter_32: 21300064
+      DropSpitter_33: 21300066
+      DropSpitter_34: 21300068
+      DropSpitter_35: 21300070
+      DropSpitter_36: 21300072
+      DropSpitter_37: 21300074
+      DropSpitter_38: 21300076
+      DropSpitter_39: 21300078
+      DropSpitter_4: 21300008
+      DropSpitter_40: 21300080
+      DropSpitter_41: 21300082
+      DropSpitter_5: 21300010
+      DropSpitter_6: 21300012
+      DropSpitter_7: 21300014
+      DropSpitter_8: 21300016
+      DropSpitter_9: 21300018
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

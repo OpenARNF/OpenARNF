@@ -198,7 +198,7 @@ TextureImporter:
       213: 21300128
     second: ExclamationMark
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -215,9 +215,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -228,7 +231,7 @@ TextureImporter:
     serializedVersion: 2
     filterMode: 0
     aniso: 1
-    mipBias: -100
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -249,9 +252,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -263,6 +272,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -275,6 +285,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -287,6 +298,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -299,6 +311,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
@@ -1679,9 +1692,74 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      0: 21300070
+      1: 21300046
+      2: 21300086
+      3: 21300072
+      4: 21300056
+      5: 21300064
+      6: 21300048
+      7: 21300000
+      8: 21300100
+      9: 21300084
+      A: 21300032
+      Ampersand: 21300052
+      AtSymbol: 21300006
+      B: 21300078
+      Backslash: 21300096
+      C: 21300094
+      Carrot: 21300068
+      CarrotClose: 21300106
+      CarrotOpen: 21300090
+      Colon: 21300126
+      CurlyBraceClose: 21300076
+      CurlyBraceOpen: 21300062
+      D: 21300018
+      Dollar Sign: 21300098
+      DoubleQuote: 21300114
+      E: 21300034
+      EqualsSign: 21300110
+      ExclamationMark: 21300128
+      F: 21300066
+      ForwardSlash: 21300002
+      G: 21300080
+      H: 21300004
+      I: 21300020
+      J: 21300022
+      K: 21300054
+      L: 21300008
+      M: 21300024
+      Minus: 21300120
+      N: 21300040
+      O: 21300102
+      P: 21300038
+      Parenthesis Close: 21300092
+      Parenthesis Open: 21300108
+      Period: 21300122
+      Plus: 21300050
+      PoundSign: 21300112
+      Q: 21300044
+      QuestionMark: 21300060
+      QuoteClose: 21300118
+      QuoteOpen: 21300116
+      R: 21300028
+      S: 21300012
+      SmallFontOutlineBoldBlueSprite_41: 21300082
+      Star: 21300036
+      T: 21300104
+      Tilde: 21300016
+      U: 21300088
+      Underscore: 21300124
+      V: 21300074
+      W: 21300058
+      X: 21300042
+      Y: 21300026
+      Z: 21300010
+      '[': 21300014
+      ']': 21300030
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

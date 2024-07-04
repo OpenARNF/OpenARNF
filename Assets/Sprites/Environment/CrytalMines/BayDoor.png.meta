@@ -117,7 +117,7 @@ TextureImporter:
       213: 6691300360851638247
     second: BayDoor_37
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -134,9 +134,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -146,8 +149,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -168,9 +171,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -182,6 +191,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -194,6 +204,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -206,6 +217,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -1019,9 +1031,47 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      BayDoor_0: -3129727381942596249
+      BayDoor_1: -1531639845189778773
+      BayDoor_10: 7668878579759975639
+      BayDoor_11: -6391929574472328106
+      BayDoor_12: -6121420184707978784
+      BayDoor_13: -3886859125581511943
+      BayDoor_14: 1555261101375573955
+      BayDoor_15: -6000132448109926477
+      BayDoor_16: 3709681247830149859
+      BayDoor_17: 6219482066021975004
+      BayDoor_18: 2133239513286197689
+      BayDoor_19: -5144752611838651469
+      BayDoor_2: -166708680718440603
+      BayDoor_20: -6371000271364681855
+      BayDoor_21: 3904759361084129610
+      BayDoor_22: -6341477516820784668
+      BayDoor_23: 4153192922465604151
+      BayDoor_24: -6476246885142227852
+      BayDoor_25: -5918402439009406166
+      BayDoor_26: -6102897535015378621
+      BayDoor_27: 2029687913904807669
+      BayDoor_28: 8464177495431531779
+      BayDoor_29: 3386879669737889828
+      BayDoor_3: 6139894949462869984
+      BayDoor_30: 8692994758711093099
+      BayDoor_31: 758438151570388244
+      BayDoor_32: -6947952447624629414
+      BayDoor_33: -3476941461609696733
+      BayDoor_34: -7998071557802535252
+      BayDoor_35: 4005536607200446032
+      BayDoor_36: 6951745040642252220
+      BayDoor_37: 6691300360851638247
+      BayDoor_4: -5214770407894040822
+      BayDoor_5: 8114227385674508773
+      BayDoor_6: -3851555922859024371
+      BayDoor_7: -247456780826772208
+      BayDoor_8: -6672540507034150952
+      BayDoor_9: -1917157658023415452
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

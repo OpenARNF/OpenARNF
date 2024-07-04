@@ -153,7 +153,7 @@ TextureImporter:
       213: 21300098
     second: TheTraitor_49
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -170,9 +170,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -182,8 +185,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -204,9 +207,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -218,6 +227,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -230,6 +240,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -242,6 +253,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -254,6 +266,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -266,6 +279,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
@@ -1331,9 +1345,59 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: shops
+    nameFileIdTable:
+      TheTraitor_0: 21300000
+      TheTraitor_1: 21300002
+      TheTraitor_10: 21300020
+      TheTraitor_11: 21300022
+      TheTraitor_12: 21300024
+      TheTraitor_13: 21300026
+      TheTraitor_14: 21300028
+      TheTraitor_15: 21300030
+      TheTraitor_16: 21300032
+      TheTraitor_17: 21300034
+      TheTraitor_18: 21300036
+      TheTraitor_19: 21300038
+      TheTraitor_2: 21300004
+      TheTraitor_20: 21300040
+      TheTraitor_21: 21300042
+      TheTraitor_22: 21300044
+      TheTraitor_23: 21300046
+      TheTraitor_24: 21300048
+      TheTraitor_25: 21300050
+      TheTraitor_26: 21300052
+      TheTraitor_27: 21300054
+      TheTraitor_28: 21300056
+      TheTraitor_29: 21300058
+      TheTraitor_3: 21300006
+      TheTraitor_30: 21300060
+      TheTraitor_31: 21300062
+      TheTraitor_32: 21300064
+      TheTraitor_33: 21300066
+      TheTraitor_34: 21300068
+      TheTraitor_35: 21300070
+      TheTraitor_36: 21300072
+      TheTraitor_37: 21300074
+      TheTraitor_38: 21300076
+      TheTraitor_39: 21300078
+      TheTraitor_4: 21300008
+      TheTraitor_40: 21300080
+      TheTraitor_41: 21300082
+      TheTraitor_42: 21300084
+      TheTraitor_43: 21300086
+      TheTraitor_44: 21300088
+      TheTraitor_45: 21300090
+      TheTraitor_46: 21300092
+      TheTraitor_47: 21300094
+      TheTraitor_48: 21300096
+      TheTraitor_49: 21300098
+      TheTraitor_5: 21300010
+      TheTraitor_6: 21300012
+      TheTraitor_7: 21300014
+      TheTraitor_8: 21300016
+      TheTraitor_9: 21300018
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

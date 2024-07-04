@@ -57,7 +57,7 @@ TextureImporter:
       213: -4211833581867097122
     second: CorruptedMinerBotTentacles_17
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -74,9 +74,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -86,8 +89,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -108,9 +111,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -122,6 +131,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -134,6 +144,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -146,6 +157,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -539,9 +551,27 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      CorruptedMinerBotTentacles_0: -1639874887721197507
+      CorruptedMinerBotTentacles_1: -8281852102027632215
+      CorruptedMinerBotTentacles_10: -8662789192011480164
+      CorruptedMinerBotTentacles_11: -2132292169378036358
+      CorruptedMinerBotTentacles_12: 2445854558960445112
+      CorruptedMinerBotTentacles_13: -3432559611384128173
+      CorruptedMinerBotTentacles_14: -480384589418798748
+      CorruptedMinerBotTentacles_15: 2855018735107353637
+      CorruptedMinerBotTentacles_16: -4062178445435335359
+      CorruptedMinerBotTentacles_17: -4211833581867097122
+      CorruptedMinerBotTentacles_2: 9052047618927020619
+      CorruptedMinerBotTentacles_3: -5734479959128661779
+      CorruptedMinerBotTentacles_4: -2062407160525261781
+      CorruptedMinerBotTentacles_5: -6966201828420200154
+      CorruptedMinerBotTentacles_6: -5346053933850685729
+      CorruptedMinerBotTentacles_7: 110856009543936720
+      CorruptedMinerBotTentacles_8: -6933654950579300448
+      CorruptedMinerBotTentacles_9: -1544266916136891767
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

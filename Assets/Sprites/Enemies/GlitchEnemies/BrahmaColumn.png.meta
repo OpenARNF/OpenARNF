@@ -213,7 +213,7 @@ TextureImporter:
       213: 21300138
     second: BrahmaColumn_35
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -230,9 +230,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -242,8 +245,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -264,9 +267,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -278,6 +287,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -290,6 +300,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -302,6 +313,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -314,6 +326,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -326,6 +339,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
@@ -1097,9 +1111,45 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: glitch
+    nameFileIdTable:
+      BrahmaColumn_0: 21300068
+      BrahmaColumn_1: 21300070
+      BrahmaColumn_10: 21300088
+      BrahmaColumn_11: 21300090
+      BrahmaColumn_12: 21300092
+      BrahmaColumn_13: 21300094
+      BrahmaColumn_14: 21300096
+      BrahmaColumn_15: 21300098
+      BrahmaColumn_16: 21300100
+      BrahmaColumn_17: 21300102
+      BrahmaColumn_18: 21300104
+      BrahmaColumn_19: 21300106
+      BrahmaColumn_2: 21300072
+      BrahmaColumn_20: 21300108
+      BrahmaColumn_21: 21300110
+      BrahmaColumn_22: 21300112
+      BrahmaColumn_23: 21300114
+      BrahmaColumn_24: 21300116
+      BrahmaColumn_25: 21300118
+      BrahmaColumn_26: 21300120
+      BrahmaColumn_27: 21300122
+      BrahmaColumn_28: 21300124
+      BrahmaColumn_29: 21300126
+      BrahmaColumn_3: 21300074
+      BrahmaColumn_30: 21300128
+      BrahmaColumn_31: 21300130
+      BrahmaColumn_32: 21300132
+      BrahmaColumn_33: 21300134
+      BrahmaColumn_34: 21300136
+      BrahmaColumn_35: 21300138
+      BrahmaColumn_4: 21300076
+      BrahmaColumn_5: 21300078
+      BrahmaColumn_6: 21300080
+      BrahmaColumn_7: 21300082
+      BrahmaColumn_8: 21300084
+      BrahmaColumn_9: 21300086
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

@@ -219,7 +219,7 @@ TextureImporter:
       213: 21300142
     second: FactoryBossFlesh_71
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -236,9 +236,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -249,7 +252,7 @@ TextureImporter:
     serializedVersion: 2
     filterMode: 0
     aniso: 16
-    mipBias: -100
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -270,9 +273,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -284,6 +293,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -296,6 +306,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -308,6 +319,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -320,6 +332,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
@@ -1847,9 +1860,81 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: factoryboss
+    nameFileIdTable:
+      FactoryBossFlesh_0: 21300000
+      FactoryBossFlesh_1: 21300002
+      FactoryBossFlesh_10: 21300020
+      FactoryBossFlesh_11: 21300022
+      FactoryBossFlesh_12: 21300024
+      FactoryBossFlesh_13: 21300026
+      FactoryBossFlesh_14: 21300028
+      FactoryBossFlesh_15: 21300030
+      FactoryBossFlesh_16: 21300032
+      FactoryBossFlesh_17: 21300034
+      FactoryBossFlesh_18: 21300036
+      FactoryBossFlesh_19: 21300038
+      FactoryBossFlesh_2: 21300004
+      FactoryBossFlesh_20: 21300040
+      FactoryBossFlesh_21: 21300042
+      FactoryBossFlesh_22: 21300044
+      FactoryBossFlesh_23: 21300046
+      FactoryBossFlesh_24: 21300048
+      FactoryBossFlesh_25: 21300050
+      FactoryBossFlesh_26: 21300052
+      FactoryBossFlesh_27: 21300054
+      FactoryBossFlesh_28: 21300056
+      FactoryBossFlesh_29: 21300058
+      FactoryBossFlesh_3: 21300006
+      FactoryBossFlesh_30: 21300060
+      FactoryBossFlesh_31: 21300062
+      FactoryBossFlesh_32: 21300064
+      FactoryBossFlesh_33: 21300066
+      FactoryBossFlesh_34: 21300068
+      FactoryBossFlesh_35: 21300070
+      FactoryBossFlesh_36: 21300072
+      FactoryBossFlesh_37: 21300074
+      FactoryBossFlesh_38: 21300076
+      FactoryBossFlesh_39: 21300078
+      FactoryBossFlesh_4: 21300008
+      FactoryBossFlesh_40: 21300080
+      FactoryBossFlesh_41: 21300082
+      FactoryBossFlesh_42: 21300084
+      FactoryBossFlesh_43: 21300086
+      FactoryBossFlesh_44: 21300088
+      FactoryBossFlesh_45: 21300090
+      FactoryBossFlesh_46: 21300092
+      FactoryBossFlesh_47: 21300094
+      FactoryBossFlesh_48: 21300096
+      FactoryBossFlesh_49: 21300098
+      FactoryBossFlesh_5: 21300010
+      FactoryBossFlesh_50: 21300100
+      FactoryBossFlesh_51: 21300102
+      FactoryBossFlesh_52: 21300104
+      FactoryBossFlesh_53: 21300106
+      FactoryBossFlesh_54: 21300108
+      FactoryBossFlesh_55: 21300110
+      FactoryBossFlesh_56: 21300112
+      FactoryBossFlesh_57: 21300114
+      FactoryBossFlesh_58: 21300116
+      FactoryBossFlesh_59: 21300118
+      FactoryBossFlesh_6: 21300012
+      FactoryBossFlesh_60: 21300120
+      FactoryBossFlesh_61: 21300122
+      FactoryBossFlesh_62: 21300124
+      FactoryBossFlesh_63: 21300126
+      FactoryBossFlesh_64: 21300128
+      FactoryBossFlesh_65: 21300130
+      FactoryBossFlesh_66: 21300132
+      FactoryBossFlesh_67: 21300134
+      FactoryBossFlesh_68: 21300136
+      FactoryBossFlesh_69: 21300138
+      FactoryBossFlesh_7: 21300014
+      FactoryBossFlesh_70: 21300140
+      FactoryBossFlesh_71: 21300142
+      FactoryBossFlesh_8: 21300016
+      FactoryBossFlesh_9: 21300018
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

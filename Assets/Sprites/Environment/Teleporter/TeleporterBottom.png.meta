@@ -129,7 +129,7 @@ TextureImporter:
       213: 21300082
     second: TeleporterBottom_41
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -146,9 +146,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -158,8 +161,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -180,10 +183,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -195,6 +203,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -207,6 +216,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -219,6 +229,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -231,6 +242,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -243,6 +255,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
@@ -1140,9 +1153,51 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      TeleporterBottom_0: 21300000
+      TeleporterBottom_1: 21300002
+      TeleporterBottom_10: 21300020
+      TeleporterBottom_11: 21300022
+      TeleporterBottom_12: 21300024
+      TeleporterBottom_13: 21300026
+      TeleporterBottom_14: 21300028
+      TeleporterBottom_15: 21300030
+      TeleporterBottom_16: 21300032
+      TeleporterBottom_17: 21300034
+      TeleporterBottom_18: 21300036
+      TeleporterBottom_19: 21300038
+      TeleporterBottom_2: 21300004
+      TeleporterBottom_20: 21300040
+      TeleporterBottom_21: 21300042
+      TeleporterBottom_22: 21300044
+      TeleporterBottom_23: 21300046
+      TeleporterBottom_24: 21300048
+      TeleporterBottom_25: 21300050
+      TeleporterBottom_26: 21300052
+      TeleporterBottom_27: 21300054
+      TeleporterBottom_28: 21300056
+      TeleporterBottom_29: 21300058
+      TeleporterBottom_3: 21300006
+      TeleporterBottom_30: 21300060
+      TeleporterBottom_31: 21300062
+      TeleporterBottom_32: 21300064
+      TeleporterBottom_33: 21300066
+      TeleporterBottom_34: 21300068
+      TeleporterBottom_35: 21300070
+      TeleporterBottom_36: 21300072
+      TeleporterBottom_37: 21300074
+      TeleporterBottom_38: 21300076
+      TeleporterBottom_39: 21300078
+      TeleporterBottom_4: 21300008
+      TeleporterBottom_40: 21300080
+      TeleporterBottom_41: 21300082
+      TeleporterBottom_5: 21300010
+      TeleporterBottom_6: 21300012
+      TeleporterBottom_7: 21300014
+      TeleporterBottom_8: 21300016
+      TeleporterBottom_9: 21300018
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

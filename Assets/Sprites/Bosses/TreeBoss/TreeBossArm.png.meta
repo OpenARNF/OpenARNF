@@ -165,7 +165,7 @@ TextureImporter:
       213: 21300106
     second: TreeBossArm_53
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -182,9 +182,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -194,8 +197,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -216,9 +219,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -230,6 +239,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -242,6 +252,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -254,6 +265,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -266,6 +278,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -278,6 +291,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
@@ -1427,9 +1441,63 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: forestslums
+    nameFileIdTable:
+      TreeBossArm_0: 21300000
+      TreeBossArm_1: 21300002
+      TreeBossArm_10: 21300020
+      TreeBossArm_11: 21300022
+      TreeBossArm_12: 21300024
+      TreeBossArm_13: 21300026
+      TreeBossArm_14: 21300028
+      TreeBossArm_15: 21300030
+      TreeBossArm_16: 21300032
+      TreeBossArm_17: 21300034
+      TreeBossArm_18: 21300036
+      TreeBossArm_19: 21300038
+      TreeBossArm_2: 21300004
+      TreeBossArm_20: 21300040
+      TreeBossArm_21: 21300042
+      TreeBossArm_22: 21300044
+      TreeBossArm_23: 21300046
+      TreeBossArm_24: 21300048
+      TreeBossArm_25: 21300050
+      TreeBossArm_26: 21300052
+      TreeBossArm_27: 21300054
+      TreeBossArm_28: 21300056
+      TreeBossArm_29: 21300058
+      TreeBossArm_3: 21300006
+      TreeBossArm_30: 21300060
+      TreeBossArm_31: 21300062
+      TreeBossArm_32: 21300064
+      TreeBossArm_33: 21300066
+      TreeBossArm_34: 21300068
+      TreeBossArm_35: 21300070
+      TreeBossArm_36: 21300072
+      TreeBossArm_37: 21300074
+      TreeBossArm_38: 21300076
+      TreeBossArm_39: 21300078
+      TreeBossArm_4: 21300008
+      TreeBossArm_40: 21300080
+      TreeBossArm_41: 21300082
+      TreeBossArm_42: 21300084
+      TreeBossArm_43: 21300086
+      TreeBossArm_44: 21300088
+      TreeBossArm_45: 21300090
+      TreeBossArm_46: 21300092
+      TreeBossArm_47: 21300094
+      TreeBossArm_48: 21300096
+      TreeBossArm_49: 21300098
+      TreeBossArm_5: 21300010
+      TreeBossArm_50: 21300100
+      TreeBossArm_51: 21300102
+      TreeBossArm_52: 21300104
+      TreeBossArm_53: 21300106
+      TreeBossArm_6: 21300012
+      TreeBossArm_7: 21300014
+      TreeBossArm_8: 21300016
+      TreeBossArm_9: 21300018
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

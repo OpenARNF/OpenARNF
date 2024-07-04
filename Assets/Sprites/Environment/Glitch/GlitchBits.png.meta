@@ -183,7 +183,7 @@ TextureImporter:
       213: 21300118
     second: GlitchBits_59
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -200,9 +200,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -212,8 +215,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -234,9 +237,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -248,6 +257,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -260,6 +270,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -272,6 +283,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -284,6 +296,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -296,6 +309,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
@@ -1571,9 +1585,69 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: gltich
+    nameFileIdTable:
+      GlitchBits_0: 21300000
+      GlitchBits_1: 21300002
+      GlitchBits_10: 21300020
+      GlitchBits_11: 21300022
+      GlitchBits_12: 21300024
+      GlitchBits_13: 21300026
+      GlitchBits_14: 21300028
+      GlitchBits_15: 21300030
+      GlitchBits_16: 21300032
+      GlitchBits_17: 21300034
+      GlitchBits_18: 21300036
+      GlitchBits_19: 21300038
+      GlitchBits_2: 21300004
+      GlitchBits_20: 21300040
+      GlitchBits_21: 21300042
+      GlitchBits_22: 21300044
+      GlitchBits_23: 21300046
+      GlitchBits_24: 21300048
+      GlitchBits_25: 21300050
+      GlitchBits_26: 21300052
+      GlitchBits_27: 21300054
+      GlitchBits_28: 21300056
+      GlitchBits_29: 21300058
+      GlitchBits_3: 21300006
+      GlitchBits_30: 21300060
+      GlitchBits_31: 21300062
+      GlitchBits_32: 21300064
+      GlitchBits_33: 21300066
+      GlitchBits_34: 21300068
+      GlitchBits_35: 21300070
+      GlitchBits_36: 21300072
+      GlitchBits_37: 21300074
+      GlitchBits_38: 21300076
+      GlitchBits_39: 21300078
+      GlitchBits_4: 21300008
+      GlitchBits_40: 21300080
+      GlitchBits_41: 21300082
+      GlitchBits_42: 21300084
+      GlitchBits_43: 21300086
+      GlitchBits_44: 21300088
+      GlitchBits_45: 21300090
+      GlitchBits_46: 21300092
+      GlitchBits_47: 21300094
+      GlitchBits_48: 21300096
+      GlitchBits_49: 21300098
+      GlitchBits_5: 21300010
+      GlitchBits_50: 21300100
+      GlitchBits_51: 21300102
+      GlitchBits_52: 21300104
+      GlitchBits_53: 21300106
+      GlitchBits_54: 21300108
+      GlitchBits_55: 21300110
+      GlitchBits_56: 21300112
+      GlitchBits_57: 21300114
+      GlitchBits_58: 21300116
+      GlitchBits_59: 21300118
+      GlitchBits_6: 21300012
+      GlitchBits_7: 21300014
+      GlitchBits_8: 21300016
+      GlitchBits_9: 21300018
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

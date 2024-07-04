@@ -171,7 +171,7 @@ TextureImporter:
       213: 21300110
     second: TutorialSmithBigHead_55
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -188,9 +188,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -200,8 +203,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -222,9 +225,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -236,6 +245,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -248,6 +258,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -260,6 +271,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -272,6 +284,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -284,6 +297,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
@@ -1433,9 +1447,63 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: tutsmithboss
+    nameFileIdTable:
+      TutorialSmithBigHead_0: 21300000
+      TutorialSmithBigHead_1: 21300002
+      TutorialSmithBigHead_10: 21300020
+      TutorialSmithBigHead_11: 21300022
+      TutorialSmithBigHead_12: 21300024
+      TutorialSmithBigHead_13: 21300026
+      TutorialSmithBigHead_14: 21300028
+      TutorialSmithBigHead_15: 21300030
+      TutorialSmithBigHead_16: 21300032
+      TutorialSmithBigHead_17: 21300034
+      TutorialSmithBigHead_18: 21300036
+      TutorialSmithBigHead_19: 21300038
+      TutorialSmithBigHead_2: 21300004
+      TutorialSmithBigHead_20: 21300040
+      TutorialSmithBigHead_21: 21300042
+      TutorialSmithBigHead_22: 21300044
+      TutorialSmithBigHead_23: 21300046
+      TutorialSmithBigHead_24: 21300048
+      TutorialSmithBigHead_25: 21300050
+      TutorialSmithBigHead_26: 21300052
+      TutorialSmithBigHead_27: 21300054
+      TutorialSmithBigHead_28: 21300056
+      TutorialSmithBigHead_29: 21300058
+      TutorialSmithBigHead_3: 21300006
+      TutorialSmithBigHead_30: 21300060
+      TutorialSmithBigHead_31: 21300062
+      TutorialSmithBigHead_32: 21300064
+      TutorialSmithBigHead_33: 21300066
+      TutorialSmithBigHead_34: 21300068
+      TutorialSmithBigHead_35: 21300070
+      TutorialSmithBigHead_36: 21300072
+      TutorialSmithBigHead_37: 21300074
+      TutorialSmithBigHead_38: 21300076
+      TutorialSmithBigHead_39: 21300078
+      TutorialSmithBigHead_4: 21300008
+      TutorialSmithBigHead_40: 21300080
+      TutorialSmithBigHead_41: 21300082
+      TutorialSmithBigHead_42: 21300084
+      TutorialSmithBigHead_43: 21300086
+      TutorialSmithBigHead_44: 21300088
+      TutorialSmithBigHead_45: 21300090
+      TutorialSmithBigHead_46: 21300092
+      TutorialSmithBigHead_47: 21300094
+      TutorialSmithBigHead_48: 21300096
+      TutorialSmithBigHead_49: 21300098
+      TutorialSmithBigHead_5: 21300010
+      TutorialSmithBigHead_50: 21300100
+      TutorialSmithBigHead_51: 21300102
+      TutorialSmithBigHead_52: 21300104
+      TutorialSmithBigHead_53: 21300106
+      TutorialSmithBigHead_6: 21300012
+      TutorialSmithBigHead_7: 21300014
+      TutorialSmithBigHead_8: 21300016
+      TutorialSmithBigHead_9: 21300018
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

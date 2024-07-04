@@ -117,7 +117,7 @@ TextureImporter:
       213: -3199651182440133808
     second: TwinOrb_29
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -134,9 +134,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -146,8 +149,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -168,10 +171,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -183,6 +191,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -195,6 +204,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -207,6 +217,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -219,6 +230,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
@@ -240,7 +252,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 56e67188e092eba50800000000000000
-      internalID: 6538708851378056805
+      internalID: 126400789699376278
       vertices: []
       indices: 
       edges: []
@@ -261,7 +273,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 67bc2d0c4f5149dc0800000000000000
-      internalID: -3633254858429904010
+      internalID: -4672095299977868314
       vertices: []
       indices: 
       edges: []
@@ -282,7 +294,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 86e6ebae87a767520800000000000000
-      internalID: 2699479686408203880
+      internalID: -4298132963281583586
       vertices: []
       indices: 
       edges: []
@@ -303,7 +315,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 73dacd98769dccd30800000000000000
-      internalID: 4453173170280377655
+      internalID: 1013587109385024806
       vertices: []
       indices: 
       edges: []
@@ -864,9 +876,39 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      TwinOrb_0: 126400789699376278
+      TwinOrb_1: -4672095299977868314
+      TwinOrb_10: -977488400291290386
+      TwinOrb_11: 4494083139387566449
+      TwinOrb_12: -732995823686165167
+      TwinOrb_13: -1626913935640447235
+      TwinOrb_14: 1034678008706430051
+      TwinOrb_15: -5435984623845177858
+      TwinOrb_16: 7184237661428982899
+      TwinOrb_17: 2720291976689087586
+      TwinOrb_18: -6955229930547858771
+      TwinOrb_19: -5865138822093917618
+      TwinOrb_2: -4298132963281583586
+      TwinOrb_20: 3474368469850677031
+      TwinOrb_21: 2376443911047825605
+      TwinOrb_22: 2104869609620024519
+      TwinOrb_23: 244230208620626360
+      TwinOrb_24: 4741310088195721901
+      TwinOrb_25: -3281155593480662893
+      TwinOrb_26: -7498114410084040178
+      TwinOrb_27: 1402922445433294895
+      TwinOrb_28: -2429516782893038172
+      TwinOrb_29: -3199651182440133808
+      TwinOrb_3: 1013587109385024806
+      TwinOrb_4: -6106236019531157816
+      TwinOrb_5: 3311204812417123689
+      TwinOrb_6: -2167813083479132318
+      TwinOrb_7: -8461765122959458587
+      TwinOrb_8: -5884408505870599305
+      TwinOrb_9: -6185453295825268488
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

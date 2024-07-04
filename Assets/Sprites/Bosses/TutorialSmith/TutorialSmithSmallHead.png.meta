@@ -93,7 +93,7 @@ TextureImporter:
       213: 21300058
     second: TutorialSmithSmallHead_29
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -110,9 +110,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -122,8 +125,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -144,9 +147,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -158,6 +167,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -170,6 +180,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -182,6 +193,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -194,6 +206,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -206,6 +219,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
@@ -851,9 +865,39 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: tutsmithboss
+    nameFileIdTable:
+      TutorialSmithSmallHead_0: 21300000
+      TutorialSmithSmallHead_1: 21300002
+      TutorialSmithSmallHead_10: 21300020
+      TutorialSmithSmallHead_11: 21300022
+      TutorialSmithSmallHead_12: 21300024
+      TutorialSmithSmallHead_13: 21300026
+      TutorialSmithSmallHead_14: 21300028
+      TutorialSmithSmallHead_15: 21300030
+      TutorialSmithSmallHead_16: 21300032
+      TutorialSmithSmallHead_17: 21300034
+      TutorialSmithSmallHead_18: 21300036
+      TutorialSmithSmallHead_19: 21300038
+      TutorialSmithSmallHead_2: 21300004
+      TutorialSmithSmallHead_20: 21300040
+      TutorialSmithSmallHead_21: 21300042
+      TutorialSmithSmallHead_22: 21300044
+      TutorialSmithSmallHead_23: 21300046
+      TutorialSmithSmallHead_24: 21300048
+      TutorialSmithSmallHead_25: 21300050
+      TutorialSmithSmallHead_26: 21300052
+      TutorialSmithSmallHead_27: 21300054
+      TutorialSmithSmallHead_28: 21300056
+      TutorialSmithSmallHead_29: 21300058
+      TutorialSmithSmallHead_3: 21300006
+      TutorialSmithSmallHead_4: 21300008
+      TutorialSmithSmallHead_5: 21300010
+      TutorialSmithSmallHead_6: 21300012
+      TutorialSmithSmallHead_7: 21300014
+      TutorialSmithSmallHead_8: 21300016
+      TutorialSmithSmallHead_9: 21300018
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

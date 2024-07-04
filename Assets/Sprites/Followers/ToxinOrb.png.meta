@@ -63,7 +63,7 @@ TextureImporter:
       213: -8172844925358699035
     second: ToxinOrb_11
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -80,9 +80,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -92,8 +95,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -114,10 +117,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -129,6 +137,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -141,6 +150,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -153,6 +163,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -165,6 +176,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
@@ -186,7 +198,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 4435003dd68567c10800000000000000
-      internalID: 2050923909028533060
+      internalID: 8247323518624950962
       vertices: []
       indices: 
       edges: []
@@ -207,7 +219,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 1a3ffa90e6bc02670800000000000000
-      internalID: 8512026969199604641
+      internalID: 3970139203680936500
       vertices: []
       indices: 
       edges: []
@@ -228,7 +240,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: d0d4e235eb97dbe20800000000000000
-      internalID: 3367981954689289485
+      internalID: 5294490573214698075
       vertices: []
       indices: 
       edges: []
@@ -249,7 +261,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 8cc72ee2d27093e40800000000000000
-      internalID: 5636544299272404168
+      internalID: -8356180734635153240
       vertices: []
       indices: 
       edges: []
@@ -432,9 +444,21 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      ToxinOrb_0: 8247323518624950962
+      ToxinOrb_1: 3970139203680936500
+      ToxinOrb_10: 8140326210869119298
+      ToxinOrb_11: -8172844925358699035
+      ToxinOrb_2: 5294490573214698075
+      ToxinOrb_3: -8356180734635153240
+      ToxinOrb_4: 2712449357487341906
+      ToxinOrb_5: -6608619153524223968
+      ToxinOrb_6: -6177551234496883222
+      ToxinOrb_7: -7809953302116367884
+      ToxinOrb_8: -717595313805038511
+      ToxinOrb_9: -6320712121704800665
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

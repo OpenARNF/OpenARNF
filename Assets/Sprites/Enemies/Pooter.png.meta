@@ -147,7 +147,7 @@ TextureImporter:
       213: 21300094
     second: Pooter_47
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -164,9 +164,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -176,8 +179,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -198,9 +201,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -212,6 +221,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -224,6 +234,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -236,6 +247,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -248,6 +260,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -260,6 +273,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
@@ -1283,9 +1297,57 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: forestslums
+    nameFileIdTable:
+      Pooter_0: 21300000
+      Pooter_1: 21300002
+      Pooter_10: 21300020
+      Pooter_11: 21300022
+      Pooter_12: 21300024
+      Pooter_13: 21300026
+      Pooter_14: 21300028
+      Pooter_15: 21300030
+      Pooter_16: 21300032
+      Pooter_17: 21300034
+      Pooter_18: 21300036
+      Pooter_19: 21300038
+      Pooter_2: 21300004
+      Pooter_20: 21300040
+      Pooter_21: 21300042
+      Pooter_22: 21300044
+      Pooter_23: 21300046
+      Pooter_24: 21300048
+      Pooter_25: 21300050
+      Pooter_26: 21300052
+      Pooter_27: 21300054
+      Pooter_28: 21300056
+      Pooter_29: 21300058
+      Pooter_3: 21300006
+      Pooter_30: 21300060
+      Pooter_31: 21300062
+      Pooter_32: 21300064
+      Pooter_33: 21300066
+      Pooter_34: 21300068
+      Pooter_35: 21300070
+      Pooter_36: 21300072
+      Pooter_37: 21300074
+      Pooter_38: 21300076
+      Pooter_39: 21300078
+      Pooter_4: 21300008
+      Pooter_40: 21300080
+      Pooter_41: 21300082
+      Pooter_42: 21300084
+      Pooter_43: 21300086
+      Pooter_44: 21300088
+      Pooter_45: 21300090
+      Pooter_46: 21300092
+      Pooter_47: 21300094
+      Pooter_5: 21300010
+      Pooter_6: 21300012
+      Pooter_7: 21300014
+      Pooter_8: 21300016
+      Pooter_9: 21300018
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

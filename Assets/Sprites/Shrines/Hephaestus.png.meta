@@ -261,7 +261,7 @@ TextureImporter:
       213: 21300170
     second: Hephaestus_85
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -278,9 +278,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -290,8 +293,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -312,9 +315,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -326,6 +335,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -338,6 +348,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -350,6 +361,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -362,6 +374,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
@@ -2183,9 +2196,95 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      Hephaestus_0: 21300000
+      Hephaestus_1: 21300002
+      Hephaestus_10: 21300020
+      Hephaestus_11: 21300022
+      Hephaestus_12: 21300024
+      Hephaestus_13: 21300026
+      Hephaestus_14: 21300028
+      Hephaestus_15: 21300030
+      Hephaestus_16: 21300032
+      Hephaestus_17: 21300034
+      Hephaestus_18: 21300036
+      Hephaestus_19: 21300038
+      Hephaestus_2: 21300004
+      Hephaestus_20: 21300040
+      Hephaestus_21: 21300042
+      Hephaestus_22: 21300044
+      Hephaestus_23: 21300046
+      Hephaestus_24: 21300048
+      Hephaestus_25: 21300050
+      Hephaestus_26: 21300052
+      Hephaestus_27: 21300054
+      Hephaestus_28: 21300056
+      Hephaestus_29: 21300058
+      Hephaestus_3: 21300006
+      Hephaestus_30: 21300060
+      Hephaestus_31: 21300062
+      Hephaestus_32: 21300064
+      Hephaestus_33: 21300066
+      Hephaestus_34: 21300068
+      Hephaestus_35: 21300070
+      Hephaestus_36: 21300072
+      Hephaestus_37: 21300074
+      Hephaestus_38: 21300076
+      Hephaestus_39: 21300078
+      Hephaestus_4: 21300008
+      Hephaestus_40: 21300080
+      Hephaestus_41: 21300082
+      Hephaestus_42: 21300084
+      Hephaestus_43: 21300086
+      Hephaestus_44: 21300088
+      Hephaestus_45: 21300090
+      Hephaestus_46: 21300092
+      Hephaestus_47: 21300094
+      Hephaestus_48: 21300096
+      Hephaestus_49: 21300098
+      Hephaestus_5: 21300010
+      Hephaestus_50: 21300100
+      Hephaestus_51: 21300102
+      Hephaestus_52: 21300104
+      Hephaestus_53: 21300106
+      Hephaestus_54: 21300108
+      Hephaestus_55: 21300110
+      Hephaestus_56: 21300112
+      Hephaestus_57: 21300114
+      Hephaestus_58: 21300116
+      Hephaestus_59: 21300118
+      Hephaestus_6: 21300012
+      Hephaestus_60: 21300120
+      Hephaestus_61: 21300122
+      Hephaestus_62: 21300124
+      Hephaestus_63: 21300126
+      Hephaestus_64: 21300128
+      Hephaestus_65: 21300130
+      Hephaestus_66: 21300132
+      Hephaestus_67: 21300134
+      Hephaestus_68: 21300136
+      Hephaestus_69: 21300138
+      Hephaestus_7: 21300014
+      Hephaestus_70: 21300140
+      Hephaestus_71: 21300142
+      Hephaestus_72: 21300144
+      Hephaestus_73: 21300146
+      Hephaestus_74: 21300148
+      Hephaestus_75: 21300150
+      Hephaestus_76: 21300152
+      Hephaestus_77: 21300154
+      Hephaestus_78: 21300156
+      Hephaestus_79: 21300158
+      Hephaestus_8: 21300016
+      Hephaestus_80: 21300160
+      Hephaestus_81: 21300162
+      Hephaestus_82: 21300164
+      Hephaestus_83: 21300166
+      Hephaestus_84: 21300168
+      Hephaestus_85: 21300170
+      Hephaestus_9: 21300018
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

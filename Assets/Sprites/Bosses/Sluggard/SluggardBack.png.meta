@@ -135,7 +135,7 @@ TextureImporter:
       213: 21300086
     second: SluggardBack_43
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -152,9 +152,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -165,10 +168,10 @@ TextureImporter:
     serializedVersion: 2
     filterMode: 0
     aniso: 16
-    mipBias: -100
-    wrapU: -1
-    wrapV: -1
-    wrapW: -1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -186,9 +189,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -200,6 +209,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -212,6 +222,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -224,6 +235,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   - serializedVersion: 3
@@ -236,6 +248,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
@@ -1175,9 +1188,53 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: bosses
+    nameFileIdTable:
+      SluggardBack_0: 21300000
+      SluggardBack_1: 21300002
+      SluggardBack_10: 21300020
+      SluggardBack_11: 21300022
+      SluggardBack_12: 21300024
+      SluggardBack_13: 21300026
+      SluggardBack_14: 21300028
+      SluggardBack_15: 21300030
+      SluggardBack_16: 21300032
+      SluggardBack_17: 21300034
+      SluggardBack_18: 21300036
+      SluggardBack_19: 21300038
+      SluggardBack_2: 21300004
+      SluggardBack_20: 21300040
+      SluggardBack_21: 21300042
+      SluggardBack_22: 21300044
+      SluggardBack_23: 21300046
+      SluggardBack_24: 21300048
+      SluggardBack_25: 21300050
+      SluggardBack_26: 21300052
+      SluggardBack_27: 21300054
+      SluggardBack_28: 21300056
+      SluggardBack_29: 21300058
+      SluggardBack_3: 21300006
+      SluggardBack_30: 21300060
+      SluggardBack_31: 21300062
+      SluggardBack_32: 21300064
+      SluggardBack_33: 21300066
+      SluggardBack_34: 21300068
+      SluggardBack_35: 21300070
+      SluggardBack_36: 21300072
+      SluggardBack_37: 21300074
+      SluggardBack_38: 21300076
+      SluggardBack_39: 21300078
+      SluggardBack_4: 21300008
+      SluggardBack_40: 21300080
+      SluggardBack_41: 21300082
+      SluggardBack_42: 21300084
+      SluggardBack_43: 21300086
+      SluggardBack_5: 21300010
+      SluggardBack_6: 21300012
+      SluggardBack_7: 21300014
+      SluggardBack_8: 21300016
+      SluggardBack_9: 21300018
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

@@ -75,7 +75,7 @@ TextureImporter:
       213: 5496756958573643922
     second: FleshDevilFace_23
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -92,9 +92,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -104,8 +107,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -126,9 +129,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -140,6 +149,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -152,6 +162,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -164,6 +175,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -599,9 +611,29 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      FleshDevilFace_0: -1793622374841450874
+      FleshDevilFace_1: -3642723891973840132
+      FleshDevilFace_10: 2732618926368879082
+      FleshDevilFace_11: 5874714169854586869
+      FleshDevilFace_12: -7488427496504815273
+      FleshDevilFace_13: 6149337733970466567
+      FleshDevilFace_14: -4887662667533871849
+      FleshDevilFace_15: -5448461336977918985
+      FleshDevilFace_16: 4658739675696440756
+      FleshDevilFace_17: -255450079406994744
+      FleshDevilFace_18: -3312516030958182771
+      FleshDevilFace_19: 3200942726822531211
+      FleshDevilFace_2: 427681713796093086
+      FleshDevilFace_3: 119356469088565290
+      FleshDevilFace_4: -2809986687659220523
+      FleshDevilFace_5: 6380565378319731914
+      FleshDevilFace_6: 5260719632688602269
+      FleshDevilFace_7: -6250990556393428996
+      FleshDevilFace_8: -2748584084113136957
+      FleshDevilFace_9: 3227356406496289006
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
