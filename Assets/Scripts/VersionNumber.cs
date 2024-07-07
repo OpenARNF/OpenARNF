@@ -18,14 +18,7 @@ public class VersionNumber : MonoBehaviour
 
     public void SetText()
     {
-        if (SaveGameManager.instance && SaveGameManager.instance.saveFileData != null && SaveGameManager.instance.saveFileData.conventionMode)
-        {
-            _text.text = SaveGameManager.version.ToString() + " " + conMessage;
-        }
-        else
-        {
-            _text.text = SaveGameManager.version.ToString();
-        }
+        _text.text = "v20240707.1";
     }
 
     private void OnDestroy()

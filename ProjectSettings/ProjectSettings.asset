@@ -12,8 +12,8 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 0
-  companyName: Matt Bitner
-  productName: A Robot Named Fight
+  companyName: openarnf.github.io
+  productName: OpenARNF
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0, g: 0, b: 0, a: 1}
@@ -145,11 +145,10 @@ PlayerSettings:
   loadStoreDebugModeEnabled: 0
   visionOSBundleVersion: 1.0
   tvOSBundleVersion: 1.0
-  bundleVersion: 1.6.1.35
+  bundleVersion: 20240707.1
   preloadedAssets:
   - {fileID: 12800000, guid: 16b874c8059e307468f14f5963b00f52, type: 3}
   - {fileID: 0}
-  - {fileID: 11400000, guid: efdec1b9f52686c418a73333f8d127f0, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 0
@@ -272,7 +271,7 @@ PlayerSettings:
   useCustomGradlePropertiesTemplate: 0
   useCustomGradleSettingsTemplate: 0
   useCustomProguardFile: 0
-  AndroidTargetArchitectures: 5
+  AndroidTargetArchitectures: 2
   AndroidTargetDevices: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
@@ -290,7 +289,7 @@ PlayerSettings:
   - width: 320
     height: 180
     banner: {fileID: 0}
-  androidGamepadSupportLevel: 0
+  androidGamepadSupportLevel: 2
   chromeosInputEmulation: 1
   AndroidMinifyRelease: 0
   AndroidMinifyDebug: 0
@@ -834,7 +833,7 @@ PlayerSettings:
     iPhone: 1
   scriptingBackend:
     : 1
-    Android: 0
+    Android: 1
     Standalone: 0
     WebPlayer: 0
     Windows Store Apps: 1
