@@ -1,4 +1,30 @@
-# OpenARNF
+# A Robot Named Fight videogame public source code
+
+## Android build download
+
+Get the latest APK in [releases](https://github.com/OpenARNF/OpenARNF/releases), **controller is required**, controller buttons [are hardcoded](https://github.com/OpenARNF/OpenARNF/blob/master/Assets/PsuedoMiddleware/Rewired/Rewired.cs#L87).
+
+Desktop version is currently completely inferior to the official one, get it [on Steam](https://store.steampowered.com/app/603530/A_Robot_Named_Fight/) instead, it has no DRM and is not expensive.
+
+## Changes applied to original sources
+ 
+ - Unity version is updated to `2022.3.36f1` (latest LTS)
+
+ - Controller support is implemented using InputSystem
+
+ - The fix is added to make destroyable blocks to be actually destoyable
+
+ - Android branch is added, the build is tested with DualShock and X-Box One controllers
+
+ - Product name and company name are changed to OpenARNF
+
+## How to build
+
+ - Download [Unity Hub application](https://docs.unity3d.com/hub/manual/InstallHub.html)
+ - Install editor version `2022.3.36f1` including there additional packages for Linux/Mac/Windows as needed
+ - Open this repo in editor, choose "File->Build Settings->Build" (ignoring the warning about lack of access to Unity services)
+
+# Original README from the ARNF Creator
 
 A Robot Named Fight first launched on Steam on September 7th, 2017. Since then we've built a large, wonderful fan-base, released multiple free updates, and more than doubled the amount of content featured in the game. It's been an amazing 5 years of A Robot Named Fight.
 
